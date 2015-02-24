@@ -1,0 +1,530 @@
+/* Edmundo Junior
+ * @edmundojr_ */
+
+/* ==========================================================================
+   Let's keep things straight
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+figure {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
+
+body {
+	font: 100 1.25em/1.5em "Proxima Nova", sans-serif;
+	color: #949199;
+	text-rendering: optimizeLegibility;
+	background-color: #18181c;
+	background-image: radial-gradient(ellipse at top, #202126, #101012);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+/* Typography
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: bold;
+	color: #ece9f2;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	margin: 0.67em 0 .335em;
+	font-size: 2.8em;
+	line-height: 1.107142857em;
+}
+
+h1:first-child {
+	margin-top: 0;
+	margin-bottom: .3em;
+}
+
+h2 {
+	margin: .830em 0 .415em;
+	font-size: 2.3em;
+	line-height: 1.130434783em;
+}
+
+h3 {
+	margin: 1em 0 .5em;
+	font-size: 1.8em;
+	line-height: 1.166666667em;
+}
+
+h4 {
+	margin: 1.33em 0 .665em;
+	font-size: 1.3em;
+	line-height: 1.230769231em;
+}
+
+blockquote {
+	position: relative;
+	padding-left: 1.5em;
+	margin: 1em 0;
+	font: 300 1.3em/1.230769231em "lexia", serif;
+	-webkit-font-smoothing: antialiased;
+	color: #c6c2cc;
+}
+
+blockquote::before {
+	position: absolute;
+	top: 7px;
+	left: 0;
+	width: 3px;
+	height: 84%;
+	font-size: 1.5em;
+	color: #c6c2cc;
+	background: #949199;
+	border-radius: 3px;
+	content: "";
+}
+
+blockquote a {
+	font-weight: 300;
+}
+
+blockquote footer {
+	margin: .5em 0;
+	font: 100 20px/1.4em "proxima-nova", "Proxima Nova", sans-serif;
+	color: #949199;
+}
+
+blockquote::before {
+	background: transparent;
+	content: "“";
+}
+
+hr {
+	display: block;
+	max-width: 12em;
+	padding: 0;
+	margin: 1.5em auto;
+	border: 0;
+	border-top: 2px solid #414145;
+	border-top: 2px solid rgba(255,255,255,.15);
+}
+
+/* ==========================================================================
+   Helper Classes
+   ========================================================================== */
+
+/* Clearfix */
+
+.cf::before,
+.cf::after {
+	content: "";
+	display: table;
+}
+
+.cf::after {
+	clear: both;
+}
+
+/* Image replacement */
+
+.ir {
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
+/* Buttons */
+
+.btn {
+	display: inline-block;
+	padding: .2em .8em;
+	margin-top: .5em;
+	font-size: .9em;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: inherit;
+	border: 2px solid #dad4e5;
+	border-radius: 25px;
+	-webkit-transition: color .3s, background .3s, border .3s;
+	   -moz-transition: color .3s, background .3s, border .3s;
+	    -ms-transition: color .3s, background .3s, border .3s;
+	     -o-transition: color .3s, background .3s, border .3s;
+	        transition: color .3s, background .3s, border .3s;
+}
+
+.btn:hover,
+.btn:focus {
+	color: #fff;
+	background: #626273;
+	border-color: #626273;
+}
+
+/* ==========================================================================
+   Structure & Grid
+   ========================================================================== */
+
+.main {
+	overflow: hidden;
+}
+
+/* 1260 */
+
+.container {
+	overflow: hidden;
+	max-width: 1260px;
+	width: 90%;
+	padding: 0 1.5%;
+	margin: 0 auto;
+}
+
+/* 900 */
+
+.container--narrow {
+	max-width: 45em;
+}
+
+/* Grid
+   ========================================================================== */
+
+.col {
+	margin: 1.5%;
+}
+
+.col.full,
+.col.half {
+	width: 97%;
+}
+
+.grid > div {
+	padding: 4em;
+	background: rgba(255,255,255,.1);
+}
+
+/* 640px */
+
+@media all and (min-width: 32em) {
+
+	.col {
+		float: left;
+		width: 47%;
+	}
+
+	.col.half {
+		width: 97%;
+	}
+
+	.col.third {
+		width: 31.333333333%;
+	}
+
+	.col.two-thirds {
+		width: 62.666666666%;
+	}
+
+}
+
+/* 960px */
+
+@media all and (min-width: 48em) {
+
+	.col {
+		width: 22%;
+	}
+
+	.col.half {
+		width: 47%;
+	}
+
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+
+.logo {
+	position: fixed;
+	top: 60px;
+	left: 50%;
+	z-index: 10;
+	width: 70px;
+	height: 79px;
+	margin-left: -35px;
+	background: url(../img/logo.svg) no-repeat center;
+	-webkit-transition: opacity 300ms, transform 300ms;
+	   -moz-transition: opacity 300ms, transform 300ms;
+	    -ms-transition: opacity 300ms, transform 300ms;
+	     -o-transition: opacity 300ms, transform 300ms;
+	        transition: opacity 300ms, transform 300ms;
+}
+
+.logo:hover,
+.logo:focus {
+	opacity: .75;
+}
+
+/* Navigation
+   ========================================================================== */
+
+.headroom--not-top .logo,
+.headroom--not-top .nav {
+	-webkit-transform: translateY(-25px);
+	   -moz-transform: translateY(-25px);
+	    -ms-transform: translateY(-25px);
+	     -o-transform: translateY(-25px);
+	        transform: translateY(-25px);
+}
+
+.nav {
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	z-index: 9;
+	margin-left: -30px;
+	padding-left: 80px;
+	-webkit-transition: transform 300ms;
+	   -moz-transition: transform 300ms;
+	    -ms-transition: transform 300ms;
+	     -o-transition: transform 300ms;
+	        transition: transform 300ms;
+}
+
+.nav div,
+.nav a {
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-origin: left center;
+	   -moz-transform-origin: left center;
+	    -ms-transform-origin: left center;
+	     -o-transform-origin: left center;
+	        transform-origin: left center;
+}
+
+.nav div {
+	width: 130px;
+	padding: 1em 0;
+	-webkit-transform: scale(.25) translateX(-10px);
+	   -moz-transform: scale(.25) translateX(-10px);
+	    -ms-transform: scale(.25) translateX(-10px);
+	     -o-transform: scale(.25) translateX(-10px);
+	        transform: scale(.25) translateX(-10px);
+	-webkit-transition: transform 600ms cubic-bezier(.77,0,.175,1);
+	   -moz-transition: transform 600ms cubic-bezier(.77,0,.175,1);
+	    -ms-transition: transform 600ms cubic-bezier(.77,0,.175,1);
+	     -o-transition: transform 600ms cubic-bezier(.77,0,.175,1);
+	        transition: transform 600ms cubic-bezier(.77,0,.175,1);
+}
+
+.nav a {
+	display: inline-block;
+	padding: 0 .5em;
+	margin: .25em 0;
+	font-size: .8em;
+	font-weight: bold;
+	line-height: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #fff;
+	background: #fff;
+	border-radius: 25px;
+	-webkit-transition: background 350ms 300ms cubic-bezier(.77,0,.175,1), opacity 300ms;
+	   -moz-transition: background 350ms 300ms cubic-bezier(.77,0,.175,1), opacity 300ms;
+	    -ms-transition: background 350ms 300ms cubic-bezier(.77,0,.175,1), opacity 300ms;
+	     -o-transition: background 350ms 300ms cubic-bezier(.77,0,.175,1), opacity 300ms;
+	        transition: background 350ms 300ms cubic-bezier(.77,0,.175,1), opacity 300ms;
+}
+
+.nav:hover div,
+.nav:hover a {
+	-webkit-transform: none;
+	   -moz-transform: none;
+	    -ms-transform: none;
+	     -o-transform: none;
+	        transform: none;
+}
+
+.nav:hover a {
+	opacity: .4;
+	text-shadow: none;
+	background: transparent;
+	-webkit-transition: background 350ms cubic-bezier(.77,0,.175,1), opacity 300ms;
+	   -moz-transition: background 350ms cubic-bezier(.77,0,.175,1), opacity 300ms;
+	    -ms-transition: background 350ms cubic-bezier(.77,0,.175,1), opacity 300ms;
+	     -o-transition: background 350ms cubic-bezier(.77,0,.175,1), opacity 300ms;
+	        transition: background 350ms cubic-bezier(.77,0,.175,1), opacity 300ms;
+}
+
+.nav a:hover,
+.nav a:focus {
+	opacity: .75;
+}
+
+.nav:hover .is-active {
+	opacity: 1;
+}
+
+/* ==========================================================================
+   Introduction
+   ========================================================================== */
+
+.intro {
+	padding-bottom: 12em;
+	-webkit-backface-visibility: hidden;
+}
+
+.intro p {
+	margin: .5em 0 1.2em;
+	font-size: 1.5em;
+	line-height: 1.266666667em;
+}
+
+/* Title */
+
+.title,
+.title span {
+	white-space: nowrap;
+}
+
+.title span + span {
+	display: none;
+}
+
+/* ==========================================================================
+   Portfolio / Works
+   ========================================================================== */
+
+/* Diagonal separator */
+
+.work {
+	position: relative;
+	padding: 3em 0;
+	background: #ece9f2;
+}
+
+.work::before,
+.work::after {
+	position: absolute;
+	top: -150px;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 200px;
+	background: inherit;
+	pointer-events: none;
+	content: "";
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: skew(0,2deg);
+	   -moz-transform: skew(0,2deg);
+	    -ms-transform: skew(0,2deg);
+	     -o-transform: skew(0,2deg);
+	        transform: skew(0,2deg);
+}
+
+.work::before {
+	background: rgba(236,233,242,.5);
+	-webkit-transform: skew(0,-2deg);
+	   -moz-transform: skew(0,-2deg);
+	    -ms-transform: skew(0,-2deg);
+	     -o-transform: skew(0,-2deg);
+	        transform: skew(0,-2deg);
+}
+
+/* Single Job
+   ========================================================================== */
+
+.job {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+/* Browser Frame */
+
+.browser-frame {
+	position: relative;
+	padding-top: 1.6em;
+	background: #aeaeae;
+	border-radius: 5px;
+	box-shadow: 0 6px 20px rgba(0,0,0,.1);
+}
+
+.browser-frame img {
+	width: 100%;
+	border-radius: 0 0 5px 5px;
+}
+
+.browser-frame::before {
+	position: absolute;
+	top: 11px;
+	left: 12px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	content: "";
+	box-shadow: 17px 0 0 #fff, 34px 0 0 #fff;
+	border-radius: 50%;
+}
+
+/* Job Info */
+
+.job-info {
+	/*padding-top: 3em;*/
+	text-align: right;
+}
+
+.browser-frame + .job-info {
+	text-align: left;
+}
+
+.job-info h2 {
+	color: #626273;
+}
+
+.job-info p {
+	color: #949199;
+}
+
+.job-info strong {
+	font-weight: 400;
+	color: #7a7780;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+	padding: 3em 0;
+	text-align: center;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #fff;
+}
