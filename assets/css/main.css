@@ -341,7 +341,6 @@ small {
 
 .nav {
 	padding: 2.5em 0;
-	border-bottom: 1px solid rgba(255,255,255,.04);
 }
 
 .nav ul {
@@ -395,10 +394,12 @@ small {
 	}
 }
 
-/* Introduction, open line
+/* ==========================================================================
+   Opening lines, introduction
    ========================================================================== */
 
 .intro {
+	border-top: 1px solid rgba(255,255,255,.04);
 	padding: 5em 0;
 }
 
@@ -420,14 +421,15 @@ small {
 
 }
 
-/* Device */
+/* Morphing Device
+   ========================================================================== */
 
 .device {
 	position: relative;
 	width: 100%;
 	padding-top: 75%;
 	margin: 8% auto 0;
-	border: 2px solid #59b453;
+	border: 2px solid #ebcb63;
 	border-radius: 6px;
 	box-shadow: 10px 10px 0 -2px #161619, 10px 10px 0 rgba(255,255,255,.1);
 	-webkit-backface-visibility: hidden;
@@ -439,7 +441,7 @@ small {
 	0%, 15% {
 		width: 100%;
 		padding-top: 75%;
-		border-color: #59b453;
+		border-color: #ebcb63;
 		transform: rotate(0);
 		box-shadow: 10px 10px 0 -2px #161619, 10px 10px 0 rgba(255,255,255,.1);
 	}
@@ -447,16 +449,16 @@ small {
 	25%, 40% {
 		width: 70%;
 		padding-top: 55%;
-		border-color: #ebcb63;
-		transform: rotate(-90deg) translateX(-30px);
-		box-shadow: -10px 10px 0 -2px #161619, -10px 10px 0 rgba(255,255,255,.1);
+		border-color: #4b8ac4;
+		transform: rotate(90deg) translateX(30px);
+		box-shadow: 10px -10px 0 -2px #161619, 10px -10px 0 rgba(255,255,255,.1);
 	}
 
 	50%, 65% {
 		width: 25%;
 		padding-top: 40%;
 		border-color: #e14441;
-		transform: rotate(-180deg) translateY(-40px);
+		transform: rotate(180deg) translateY(-40px);
 		box-shadow: -10px -10px 0 -2px #161619, -10px -10px 0 rgba(255,255,255,.1);
 	}
 
@@ -464,15 +466,15 @@ small {
 		width: 70%;
 		padding-top: 55%;
 		border-color: #4b8ac4;
-		transform: rotate(-270deg) translateX(30px);
-		box-shadow: 10px -10px 0 -2px #161619, 10px -10px 0 rgba(255,255,255,.1);
+		transform: rotate(270deg) translateX(-30px);
+		box-shadow: -10px 10px 0 -2px #161619, -10px 10px 0 rgba(255,255,255,.1);
 	}
 
 	100% {
 		width: 100%;
 		padding-top: 75%;
 		border-color: #59b453;
-		transform: rotate(-360deg);
+		transform: rotate(360deg);
 		box-shadow: 10px 10px 0 -2px #161619, 10px 10px 0 rgba(255,255,255,.1);
 	}
 
@@ -518,10 +520,7 @@ small {
 }
 
 /* ==========================================================================
-   Page specifics (.main--$page)
-   ========================================================================== */
-
-/* About
+   Page: About
    ========================================================================== */
 
 .main--about {
@@ -529,21 +528,81 @@ small {
 	background-image: linear-gradient(#060607, #141517);
 }
 
-/* Work (possible)
+/* ==========================================================================
+   Page: Work
    ========================================================================== */
 
 .main--work {
-	min-height: 800px;
+	/*color: #353330;*/
 	background-color: #e3e4e8;
 	background-image: radial-gradient(circle at 2% 90%, #e3e4e8, transparent 100%), radial-gradient(circle at 98% 0%, #e3e4e8, transparent 100%),radial-gradient(circle at 50% 50%, #b1b2b9, #b1b2b9 100%);
 }
 
-/* Contact
+.main--work h1,
+.main--work h2,
+.main--work h3 {
+	color: #353330;
+}
+
+/* Job
+   ========================================================================== */
+
+.job {
+	padding-top: 6em;
+	padding-bottom: 6em;
+}
+
+/* Browser Frame */
+
+.browser-frame {
+	position: relative;
+	overflow: hidden;
+	padding-top: 1.6em;
+	background-color: #aeaeae;
+	background-image: linear-gradient(transparent, rgba(0,0,0,.5));
+	border-radius: 5px;
+	box-shadow: 0 6px 20px rgba(0,0,0,.1);
+}
+
+.browser-frame img {
+	width: 100%;
+	border-radius: 0 0 5px 5px;
+}
+
+.browser-frame::before {
+	position: absolute;
+	top: 11px;
+	left: 12px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	content: "";
+	box-shadow: 17px 0 0 #fff, 34px 0 0 #fff;
+	border-radius: 50%;
+}
+
+/* Job Info */
+
+.job-info {
+	padding-top: 6em;
+	text-align: right;
+}
+
+.browser-frame + .job-info {
+	text-align: left;
+}
+
+.job-info strong {
+	font-weight: 600;
+}
+
+/* ==========================================================================
+   Page: Contact
    ========================================================================== */
 
 .main--contact {
 	color: #363430;
-	background: #ffdf5e;
+	background: #fad36c;
 }
 
 .main--contact h1,
@@ -552,7 +611,8 @@ small {
 	color: #363430;
 }
 
-/* Sidebar */
+/* Sidebar
+   ========================================================================== */
 
 .main--contact .sidebar {
 	margin-top: 3.5em;
@@ -584,7 +644,8 @@ small {
 	color: #5f7993;
 }
 
-/* Contact Form */
+/* Contact Form
+   ========================================================================== */
 
 .contact-form input,
 .contact-form textarea {
@@ -643,103 +704,4 @@ small {
 .contact-form .submit:active {
 	top: 1px;
 	box-shadow: 0 0 1px #dcc45f;
-}
-
-/* ==========================================================================
-   Portfolio / Works
-   ========================================================================== */
-
-/* Diagonal separator */
-
-.work {
-	position: relative;
-	padding: 3em 0;
-	background: #ece9f2;
-}
-
-.work::before,
-.work::after {
-	position: absolute;
-	top: -150px;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-	height: 200px;
-	background: inherit;
-	pointer-events: none;
-	content: "";
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: skew(0,2deg);
-	   -moz-transform: skew(0,2deg);
-	    -ms-transform: skew(0,2deg);
-	     -o-transform: skew(0,2deg);
-	        transform: skew(0,2deg);
-}
-
-.work::before {
-	background: rgba(236,233,242,.5);
-	-webkit-transform: skew(0,-2deg);
-	   -moz-transform: skew(0,-2deg);
-	    -ms-transform: skew(0,-2deg);
-	     -o-transform: skew(0,-2deg);
-	        transform: skew(0,-2deg);
-}
-
-/* Single Job
-   ========================================================================== */
-
-.job {
-	padding-top: 3em;
-	padding-bottom: 3em;
-}
-
-/* Browser Frame */
-
-.browser-frame {
-	position: relative;
-	padding-top: 1.6em;
-	background: #aeaeae;
-	border-radius: 5px;
-	box-shadow: 0 6px 20px rgba(0,0,0,.1);
-}
-
-.browser-frame img {
-	width: 100%;
-	border-radius: 0 0 5px 5px;
-}
-
-.browser-frame::before {
-	position: absolute;
-	top: 11px;
-	left: 12px;
-	width: 10px;
-	height: 10px;
-	background: #fff;
-	content: "";
-	box-shadow: 17px 0 0 #fff, 34px 0 0 #fff;
-	border-radius: 50%;
-}
-
-/* Job Info */
-
-.job-info {
-	/*padding-top: 3em;*/
-	text-align: right;
-}
-
-.browser-frame + .job-info {
-	text-align: left;
-}
-
-.job-info h2 {
-	color: #626273;
-}
-
-.job-info p {
-	color: #949199;
-}
-
-.job-info strong {
-	font-weight: 400;
-	color: #7a7780;
 }
