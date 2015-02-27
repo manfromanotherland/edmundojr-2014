@@ -1,9 +1,8 @@
-	<footer role="contentinfo" class="footer">
-		<span>&lt;&frasl;&gt;</span> with <span>&lt;3</span> in <a href="http://en.wikipedia.org/wiki/Dublin" title="Dublin" class="flag-dublin">Dublin</a> by <a href="http://twitter.com/edmundojr_">@edmundojr_</a>
-	</footer>
+		<footer role="contentinfo" class="footer container container--narrow cf">
+			<small>Made with love in Dublin. Follow me on <a href="https://twitter.com/edmundojr_">Twitter</a> and <a href="https://instagram.com/edmundojr_">Instagram</a>.</small>
+		</footer>
 
-	<script src="assets/js/headroom.min.js"></script>
-	<script src="assets/js/main.js"></script>
+	</main>
 
 </body>
 </html>
