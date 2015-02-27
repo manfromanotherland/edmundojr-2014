@@ -35,19 +35,19 @@
 						</div>
 					</form>
 				</div>
-				<aside class="col col-1-3" role="complementary">
+				<aside class="col col-1-3 sidebar" role="complementary">
 					<h4>Email me</h4>
-					<ul class="action-me">
+					<ul class="contact-me">
 						<li><a href="mailto:hello@edmundojr.com">hello@edmundojr.com</a></li>
 					</ul>
-					<h4>Call me maybe</h4>
-					<ul class="action-me">
+					<h4>Call me</h4>
+					<ul class="contact-me">
 						<li><a href="tel:+353834599564">+353 83 459 9564</a></li>
 					</ul>
 					<h4>Follow me</h4>
-					<ul class="action-me">
+					<ul class="contact-me">
 						<li><a href="http://twitter.com/edmundojr_">Twitter</a></li>
-						<li><a href="http://instagram.com/edmundojr">Instagram</a></li>
+						<li><a href="http://instagram.com/edmundojr_">Instagram</a></li>
 					</ul>
 				</aside>
 			</article>
