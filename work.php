@@ -3,7 +3,7 @@
 		<div class="intro container container--narrow cf">
 			<div class="row">
 				<div class="col col-2-3">
-					<h1>Work it. Make it.<br> Do it. Makes us.</h1>
+					<h1>There's gonna<br> be some rocking.</h1>
 					<p>Have a look at my portfolio, you'll find the latest of my personal projects and client work.</p>
 				</div>
 			</div>
