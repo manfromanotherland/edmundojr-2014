@@ -7,7 +7,7 @@
 	<title>Edmundo Junior / Designer &amp; Front-end Developer</title>
 	<meta name="description" content="Solving problems is the favourite part of my job. I develop functional websites that work in every OS or device that the user has in his hands. I strive for a unique experience, using well thought design and a extremely thorough execution.">
 
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
 
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="assets/css/main.css">
