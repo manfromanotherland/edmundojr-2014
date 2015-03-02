@@ -37,6 +37,16 @@ function body_class() {
 }
 
 /**
+ * Add class to main based on URL
+ * @return string
+ */
+function main_class() {
+	global $page;
+	echo 'class="main main--' . $page . '"';
+
+}
+
+/**
  * Check if page is active and add class
  * @param  string
  * @return string

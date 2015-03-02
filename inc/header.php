@@ -22,10 +22,10 @@
 
 	<header class="header" role="banner">
 
-		<nav class="nav container container--narrow" role="navigation">
+		<nav class="nav container" role="navigation">
 			<h1 class="logo ir">
 				<a href="./">
-					<img src="assets/img/logo.svg" alt="Edmundo's logo" width="70" height="79">
+					<img src="assets/img/logo.svg" alt="Edmundo's brand" width="70" height="79">
 					Edmundo Junior, Designer and Front-end Developer
 				</a>
 			</h1>
@@ -36,3 +36,28 @@
 				<li><a <?php active_class("contact"); ?> href="contact">Contact</a></li>
 			</ul>
 		</nav>
+
+<?php $page = basename($_SERVER['PHP_SELF'], ".php"); ?>
+		<div class="intro container cf">
+			<div class="row">
+				<div class="col col-2-3">
+<?php if ($page == "index"): ?>
+					<h1>Elegant design,<br> thorough execution.</h1>
+					<p>As a designer and developer, I unite visual and code, always striving for an unique experience.</p>
+<?php elseif ($page == "work"): ?>
+					<h1>Porta ipsum,<br> tellus vulputate.</h1>
+					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<?php elseif ($page == "blog"): ?>
+					<h1>Porta ipsum,<br> tellus vulputate.</h1>
+					<p>Cum sociis natoque penatibus et magnis parturient montes, nascetur ridiculus.</p>
+<?php elseif ($page == "contact"): ?>
+					<h1>Let's get down<br> to business.</h1>
+					<p>I'm always looking for new projects and opportunities, have you got any?</p>
+<?php endif; ?>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<main <?php main_class(); ?> role="main">
