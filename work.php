@@ -1,25 +1,12 @@
 <?php include 'inc/functions.php'; get_header(); ?>
 
-		<div class="intro container container--narrow cf">
-			<div class="row">
-				<div class="col col-2-3">
-					<h1>There's gonna<br> be some rocking.</h1>
-					<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor.</p>
-				</div>
-			</div>
-		</div>
-
-	</header>
-
-	<main class="main main--work color-bright" role="main">
-
-		<div class="container">
+		<div class="container container--wide cf">
 
 			<!-- Mexx Metais -->
 			<article class="row job job--mexx cf">
 				<div class="col col-1-3 job-info">
 					<h2>Mexx Metais</h2>
-					<p>Mexx hired an excellent local photographer and he took some beautiful photos of the company's headquarters, so I decided to put them in evidence. I was responsible for both <strong>design</strong> and <strong>development</strong> of the website, which is fully <strong>responsive</strong>.</p>
+					<p>We have some beautiful pictures of the company, so I decided to put them in evidence. I was responsible for both <strong>design</strong> and <strong>development</strong> of the website, which is fully <strong>responsive</strong>.</p>
 					<p><a href="http://mexx.com.br" class="btn" target="_blank">Visit website</a></p>
 				</div>
 				<figure class="col col-2-3 browser-frame">

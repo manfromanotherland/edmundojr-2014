@@ -1,23 +1,24 @@
 <?php
 
 /**
- * Basic functions for easy development
+ * Basic functions for easy and fast website development
  * @author Edmundo Junior <hello@edmundojr.com>
  */
 
 /**
  * Call header
- * @return [type]
+ * @return file
  */
 function get_header() {
 	include('inc/header.php');
 }
 
-// Get Footer
+/**
+ * Call footer
+ * @return file
+ */
 function get_footer() {
-
 	include('inc/footer.php');
-
 }
 
 /**
@@ -33,7 +34,6 @@ $page = basename($_SERVER['PHP_SELF'], ".php");
 function body_class() {
 	global $page;
 	echo 'class="is-' . $page . '"';
-
 }
 
 /**
@@ -43,11 +43,10 @@ function body_class() {
 function main_class() {
 	global $page;
 	echo 'class="main main--' . $page . '"';
-
 }
 
 /**
- * Check if page is active and add class
+ * Check page URL and add class to nav item
  * @param  string
  * @return string
  */
