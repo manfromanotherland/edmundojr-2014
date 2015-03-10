@@ -1,0 +1,17 @@
+<aside class="sidebar col col-1-3" role="complementary">
+	<h4>Tags</h4>
+
+	{% capture tags %}
+		{% for tag in site.tags %}
+			{{ tag[0] }}
+		{% endfor %}
+	{% endcapture %}
+	{% assign sortedtags = tags | split:' ' | sort %}
+
+	<ul class="link-list">
+		{% for tag in sortedtags %}
+		<li><a href="/blog/tag/{{ tag }}">#{{ tag }}</a></li>
+		{% endfor %}
+	</ul>
+
+</aside>
