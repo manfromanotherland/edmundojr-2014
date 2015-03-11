@@ -4,17 +4,17 @@ layout: blog
 
 <article class="post post--tags">
 
-	<h2>{{page.title}}</h2>
+	<h2>{{ page.title }}</h2>
 	<ul class="post-list">
 		{% for post in site.posts %}
 		{% for tag in post.tags %}
 		{% if tag == page.tag %}
 		<li>
-			<a href="{{post.url}}" title="{{post.title}}">
+			<a href="{{ post.url }}" title="{{ post.title }}">
 				<time datetime=" {{post.date | date_to_xmlschema }}">
 					{{ post.date | date_to_string }}
 				</time>
-				{{post.url}}
+				{{ post.title }}
 			</a>
 		</li>
 		{% endif %}
