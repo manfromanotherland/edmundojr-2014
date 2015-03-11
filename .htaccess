@@ -1,0 +1,8 @@
+# ----------------------------------------------------------------------
+# PERMANENT REDIRECT TO /DIR
+# ----------------------------------------------------------------------
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^$ http://edmundojr.com/blog [L]
+</IfModule>
