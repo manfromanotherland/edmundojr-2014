@@ -5,4 +5,8 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteRule ^$ http://edmundojr.com/blog [L]
+
+  RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com [NC,OR]
+  RewriteCond %{HTTP_REFERER} ^http://.*buttons-for-website\.com [NC,OR]
+  RewriteRule (.*) http://www.semalt.com [R=301,L]
 </IfModule>
