@@ -28,4 +28,4 @@ markdown:         redcarpet
 
 exclude:
  - work
- # - index.html
+ - index.html
