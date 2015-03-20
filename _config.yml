@@ -26,6 +26,6 @@ disqus:           edmundojr
 
 markdown:         redcarpet
 
-exclude:
- - work
- - index.html
+# exclude:
+#  - work
+#  - index.html
