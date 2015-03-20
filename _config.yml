@@ -1,0 +1,31 @@
+# Setup
+
+title:            Edmundo Junior, Web Designer & Front-end Developer
+description:      'Solving problems is the favourite part of my job. I develop functional websites that work in every OS or device that the user has in his hands. I strive for a unique experience, using well thought design and a extremely thorough execution.'
+url:              http://edmundojr.com
+baseurl:          "/"
+
+permalink:        /:categories/:title/
+
+author:
+  name:           'Edmundo Junior'
+  email:          hello@edmundojr.com
+  facebook:       edmundojr
+  github:         edmundojr
+  instagram:      edmundojr_
+  stackoverflow:  users/1034869/edmundojr
+  twitter:        edmundojr_
+
+# paginate:         5
+
+analytics:        UA-1068613-7
+
+disqus:           edmundojr
+
+# Dependencies
+
+markdown:         redcarpet
+
+exclude:
+ - work
+ - index.html
