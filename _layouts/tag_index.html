@@ -11,7 +11,7 @@ layout: blog
 		{% if tag == page.tag %}
 		<li>
 			<a href="{{ post.url }}" title="{{ post.title }}">
-				<time datetime=" {{post.date | date_to_xmlschema }}">
+				<time datetime="{{post.date | date_to_xmlschema }}">
 					{{ post.date | date_to_string }}
 				</time>
 				{{ post.title }}

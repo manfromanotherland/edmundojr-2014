@@ -1,18 +1,23 @@
 {% include header.html %}
 
-	<main class="main main--blog" role="main">
+	<div class="intro container clearfix">
+		<div class="row">
+			<div class="col col-2-3">
+				<h1>Web design and development blog.</h1>
+				<p>Mostly design and code, but may also contain traces of random nerdy stuff.</p>
+			</div>
+		</div>
+	</div>
 
+	<main class="main main--blog">
 		<div class="container container--wide clearfix">
-
 			<div class="row">
 				<div class="col col-2-3">
 					{{ content }}
 				</div>
 				{% include sidebar.html %}
 			</div>
-
 		</div>
-
 	</main>
 
 {% include footer.html %}

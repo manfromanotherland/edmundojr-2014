@@ -16,8 +16,6 @@ author:
   stackoverflow:  users/1034869/edmundojr
   twitter:        edmundojr_
 
-# paginate:         5
-
 analytics:        UA-1068613-7
 
 disqus:           edmundojr
@@ -25,6 +23,10 @@ disqus:           edmundojr
 # Dependencies
 
 markdown:         redcarpet
+
+sass:
+  sass_dir:       _scss
+  style:          compressed
 
 # exclude:
 #  - work

@@ -1,12 +1,29 @@
 {% include header.html %}
 
-	<main class="main main--about" role="main">
-
-		<div class="container clearfix">
-
-			{{ content }}
-
+	<div class="intro container clearfix">
+		<div class="row">
+			<div class="col col-2-3">
+				{% if page.class == "about" %}
+				<h1 lang="ga">Céad míle fáilte! <span title="“Céad míle fáilte” is a commom greeting in Irish. Literally it means “a hundred thousand welcomes”, and I think that's beautiful.">*</span></h1>
+				<p>I'm Edmundo Junior, a front-end developer and designer located in lovely Dublin, Ireland.</p>
+				{% elsif page.class == "work" %}
+				<h1>Elegant design, thorough execution.</h1>
+				<p>Unique experiences craft with something very nice I still don't have a catch line.</p>
+				{% else page.class == "contact" %}
+				<h1>Let's get down to business.</h1>
+				<p>I'm always looking for new opportunities to challenge myself, have you got one?</p>
+				{% endif %}
+			</div>
 		</div>
+	</div>
+
+	<main class="main main--{{ page.class }}">
+
+			<div class="container {% if page.container %}container--{{ page.container }}{% endif %} clearfix">
+
+				{{ content }}
+
+			</div>
 
 	</main>
 

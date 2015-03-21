@@ -1,10 +1,39 @@
 ---
 layout: default
+class:  about
 ---
 
-<div class="row">
+<div class="row clearfix">
+	<article class="col col-1-2">
+		<h1 class="main__title">About me</h1>
+		<p>For the past 8 years</p>
+		<p><a href="#about">Read more</a></p>
+	</article>
+	<article class="col col-1-2">
+		<h1 class="main__title">What I do</h1>
+		<p>I'm a CSS and HTML expert.</p>
+		<p>Problem-solving is my favourite part of the job. I develop functional websites that work with anything that access the internet. I always strive for a unique experience, using well tought design and a extremely thorough execution.</p>
+		<p><a href="work">Latest work</a></p>
+	</article>
+</div>
+
+<div class="row clearfix">
 	<div class="col col-1-2">
-		<h2>About me</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptatibus, ex autem fugiat delectus, rem ducimus, nemo illo voluptate.</p>
+		<h1 class="main__title">Latest posts</h1>
+		<ul class="latest-posts">
+			{% for post in site.posts limit:4 %}
+			<li>
+				<a class="post--{{ post.type }}" href="{{ site.url }}{{ post.url }}">
+					<time datetime="{{post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+					<span>{{ post.title }}</span>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="col col-1-2">
+		<h1 class="main__title">Get in touch</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ipsum cumque reprehenderit aspernatur nostrum necessitatibus inventore, doloremque harum odit vitae aperiam nobis assumenda perspiciatis ullam nesciunt voluptatum quaerat deserunt iusto voluptates consequatur reiciendis consequuntur. Harum eius, delectus laudantium aperiam explicabo.</p>
+		<p><a href="contact">Drop me a line</a></p>
 	</div>
 </div>
