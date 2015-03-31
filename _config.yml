@@ -28,6 +28,6 @@ sass:
   sass_dir:       _scss
   style:          compressed
 
-# exclude:
-#  - work
-#  - index.html
+exclude:
+ - _deploy.sh
+ - config.codekit
