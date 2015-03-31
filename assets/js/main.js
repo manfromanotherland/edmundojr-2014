@@ -12,7 +12,7 @@ $(function () {
 			data: $(this).serialize(),
 			dataType: 'json',
 			beforeSend: function() {
-				$contactForm.find('.col:last-child').append('<div class="alert alert--loading">Sending…</div>');
+				$contactForm.find('.col:last-child').append('<div class="alert alert--loading">Sending message…</div>');
 			},
 			success: function(data) {
 				$contactForm.find('.alert--loading').hide();
@@ -20,7 +20,7 @@ $(function () {
 			},
 			error: function(err) {
 				$contactForm.find('.alert--loading').hide();
-				$contactForm.find('.col:last-child').append('<div class="alert alert--error">Ops, that\'s a error. Maybe try again?</div>');
+				$contactForm.find('.col:last-child').append('<div class="alert alert--error">Ops, there was an error. Maybe try again?</div>');
 			}
 		});
 	});
