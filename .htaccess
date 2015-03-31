@@ -350,15 +350,6 @@ AddDefaultCharset utf-8
     RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
-# ----------------------------------------------------------------------
-# | PERMANENT REDIRECT TO /DIR                                         |
-# ----------------------------------------------------------------------
-
-<IfModule mod_rewrite.c>
-	RewriteEngine On
-	RewriteRule ^$ http://edmundojr.com/blog [L]
-</IfModule>
-
 
 # ######################################################################
 # # SECURITY                                                           #
