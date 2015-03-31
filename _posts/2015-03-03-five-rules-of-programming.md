@@ -7,4 +7,4 @@ tags:       [development, links]
 type:       link
 ---
 
-Someone posted this [amazing piece of advice](http://users.ece.utexas.edu/~adnan/pike.html) on Twitter, so I'm replicating it here.
+Someone posted this [amazing piece of advice](http://users.ece.utexas.edu/~adnan/pike.html) on Twitter, so I'm linking it here.
