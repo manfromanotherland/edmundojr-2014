@@ -3,17 +3,24 @@
 	<div class="intro container clearfix">
 		<div class="row">
 			<div class="col col-2-3">
-				{% if page.class == "about" %}
-				<h1 lang="ga">Céad míle fáilte! <span title="“Céad míle fáilte” is a commom greeting in Irish. Literally it means “a hundred thousand welcomes”, and I think that's beautiful.">*</span></h1>
+			{% if page.class == "about" %}
+				<h1 lang="ga">Níl aon tintéan mar do thintéan féin.<span title="“Níl aon tintéan mar do thintéan féin” is a saying in Irish. Literally it means “there's no hearth like your own hearth”, and I think that's beautiful.">*</span></h1>
 				<p>I'm Edmundo Junior, a front-end developer and designer located in lovely Dublin, Ireland.</p>
 				{% elsif page.class == "work" %}
 				<h1>Elegant design, thorough execution.</h1>
-				<p>Unique experiences craft with something very nice I still don't have a catch line.</p>
+				<p>Websites designed with purpose and meaning, resulting in enjoyable digital experiences.</p>
+				<!-- <p>You can't make something great without being in love with it.</p>
+				<p>I help companies plan, design and develop websites that help them become more successful on the web.</p> -->
 				{% else page.class == "contact" %}
 				<h1>Let's get down to business.</h1>
 				<p>I'm always looking for new opportunities to challenge myself, have you got one?</p>
-				{% endif %}
+			{% endif %}
 			</div>
+			{% if page.class == "about" %}
+			<div class="col col-1-3">
+				<figure class="device"><figcaption class="ir">Responsive Web Design</figcaption></figure>
+			</div>
+			{% endif %}
 		</div>
 	</div>
 

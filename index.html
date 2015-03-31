@@ -5,23 +5,37 @@ class:  about
 
 <div class="row clearfix">
 	<article class="col col-1-2">
-		<h1 class="main__title">About me</h1>
-		<p>For the past 8 years</p>
-		<p><a href="#about">Read more</a></p>
+		<h1 class="headline">About me</h1>
+		<p>I'm a self-taught front-end developer, designer, and avid reader, passionate everything web-related. I've been working with web development for the last 6 years. I also worked as graphic designer for some time before joining the web revolution.</p>
+		<!-- <p><a class="btn" href="work">Profile</a></p> -->
 	</article>
+	<!-- <article>
+		<h2>Code Skills</h2>
+		<ul>
+			<li>Accessible HTML5 markup</li>
+			<li>CSS3 and SASS</li>
+			<li>Basic Javascript and jQuery</li>
+			<li>Version control with Git</li>
+		</ul>
+		<h2>Software Skills</h2>
+		<ul>
+			<li>Photoshop</li>
+			<li>Sketch</li>
+			<li>Sublime Text</li>
+		</ul>
+	</article> -->
 	<article class="col col-1-2">
-		<h1 class="main__title">What I do</h1>
-		<p>I'm a CSS and HTML expert.</p>
-		<p>Problem-solving is my favourite part of the job. I develop functional websites that work with anything that access the internet. I always strive for a unique experience, using well tought design and a extremely thorough execution.</p>
-		<p><a href="work">Latest work</a></p>
+		<h1 class="headline">What I do</h1>
+		<p>I design performance driven, responsive websites that work seamless across devices. For me, common sense wins against intricate ideas, and I love to take the latter and turn into clean and simple interfaces.</p>
+		<p><a class="btn" href="work">Latest work</a></p>
 	</article>
 </div>
 
 <div class="row clearfix">
 	<div class="col col-1-2">
-		<h1 class="main__title">Latest posts</h1>
+		<h1 class="headline">Latest articles</h1>
 		<ul class="latest-posts">
-			{% for post in site.posts limit:4 %}
+			{% for post in site.posts limit:3 %}
 			<li>
 				<a class="post--{{ post.type }}" href="{{ site.url }}{{ post.url }}">
 					<time datetime="{{post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
@@ -32,8 +46,8 @@ class:  about
 		</ul>
 	</div>
 	<div class="col col-1-2">
-		<h1 class="main__title">Get in touch</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ipsum cumque reprehenderit aspernatur nostrum necessitatibus inventore, doloremque harum odit vitae aperiam nobis assumenda perspiciatis ullam nesciunt voluptatum quaerat deserunt iusto voluptates consequatur reiciendis consequuntur. Harum eius, delectus laudantium aperiam explicabo.</p>
-		<p><a href="contact">Drop me a line</a></p>
+		<h1 class="headline">Get in touch</h1>
+		<p>I'm always looking for new opportunities to challenge myself, so let me know if you need some help creating your new website.</p>
+		<p><a class="btn" href="contact">Drop me a line</a></p>
 	</div>
 </div>
