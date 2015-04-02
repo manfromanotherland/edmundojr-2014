@@ -2,10 +2,14 @@
 
 title:            Edmundo Junior, Web Designer & Front-end Developer
 description:      'Solving problems is the favourite part of my job. I develop functional websites that work in every OS or device that the user has in his hands. I strive for a unique experience, using well thought design and a extremely thorough execution.'
+
 url:              http://edmundojr.com
 baseurl:          "/"
 
 permalink:        /:categories/:title/
+
+# paginate:         2
+# paginate_path:    "/blog/page:num/"
 
 author:
   name:           'Edmundo Junior'
