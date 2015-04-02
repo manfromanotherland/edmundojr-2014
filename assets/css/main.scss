@@ -475,6 +475,10 @@ small { font-size: .888888889em; }
 	vertical-align: middle;
 	margin: 0;
 
+	.is-about & {
+		pointer-events: none;
+	}
+
 	@include respond-to("medium") {
 		max-width: 60px;
 	}
