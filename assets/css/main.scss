@@ -471,6 +471,7 @@ small { font-size: .888888889em; }
  */
 
 .logo {
+	@include user-select(none);
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0;
