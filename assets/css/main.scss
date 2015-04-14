@@ -5,12 +5,14 @@
 
 
 
+
 /*------------------------------------*\
     #IMPORTS
 \*------------------------------------*/
 
 @import "bourbon/bourbon";
 @import "normalize";
+
 
 
 
@@ -51,6 +53,11 @@ $breakpoints: (
 
 $main-color: #737580;
 $bg-color:   #202126;
+
+
+
+
+
 
 /*------------------------------------*\
     #DEFAULTS
@@ -189,6 +196,10 @@ a { color: inherit; }
 	}
 }
 
+
+
+
+
 /*------------------------------------*\
     #TYPOGRAPHY
 \*------------------------------------*/
@@ -229,7 +240,6 @@ body {
 		opacity: .25;
 		content: "";
 	}
-
 }
 
 h1,
@@ -339,13 +349,12 @@ small { font-size: .888888889em; }
 		text-decoration: none;
 		color: inherit;
 		border-bottom: 1px solid rgba(0,0,0,.25);
-	}
 
-	a:hover,
-	a:focus {
-		opacity: .5;
+		&:hover,
+		&:focus {
+			opacity: .5;
+		}
 	}
-
 }
 
 /*
@@ -726,6 +735,8 @@ small { font-size: .888888889em; }
 	}
 
 }
+
+
 
 
 
