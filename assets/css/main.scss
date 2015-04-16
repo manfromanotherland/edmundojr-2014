@@ -980,6 +980,15 @@ small { font-size: .888888889em; }
 		background: #d8334a;
 	}
 
+	// Post Images
+	.pic {
+		display: block;
+		margin: 2em -2.5em;
+		img {
+			width: 100%;
+		}
+	}
+
 }
 
 /*
