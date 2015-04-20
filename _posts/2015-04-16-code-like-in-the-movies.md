@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 type: link
 title: Hack Like in the Movies
 link: http://geektyper.com/
