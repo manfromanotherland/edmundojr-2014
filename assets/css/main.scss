@@ -335,6 +335,22 @@ small { font-size: .888888889em; }
 	font-weight: normal;
 }
 
+
+/*
+ * Code
+ */
+
+pre {
+	padding: .75em 1em;
+	background: rgba(255,255,255,.5);
+	border-radius: 4px;
+}
+
+code {
+	font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
+	font-size: .888888889em;
+}
+
 /*
  * Sidebar lists
  */
