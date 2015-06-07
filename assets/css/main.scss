@@ -7,7 +7,7 @@
 
 
 /*------------------------------------*\
-    #IMPORTS
+	#IMPORTS
 \*------------------------------------*/
 
 @import "bourbon/bourbon";
@@ -18,7 +18,7 @@
 
 
 /*------------------------------------*\
-    #SETTINGS
+	#SETTINGS
 \*------------------------------------*/
 
 /**
@@ -60,7 +60,7 @@ $bg-color:   #202126;
 
 
 /*------------------------------------*\
-    #DEFAULTS
+	#DEFAULTS
 \*------------------------------------*/
 
 html {
@@ -141,7 +141,7 @@ a { color: inherit; }
 
 
 /*------------------------------------*\
-    #HELPER CLASSES
+	#HELPER CLASSES
 \*------------------------------------*/
 
 /*
@@ -201,7 +201,7 @@ a { color: inherit; }
 
 
 /*------------------------------------*\
-    #TYPOGRAPHY
+	#TYPOGRAPHY
 \*------------------------------------*/
 
 body {
@@ -385,7 +385,7 @@ code {
 
 
 /*------------------------------------*\
-    #LAYOUT
+	#LAYOUT
 \*------------------------------------*/
 
 .container {
@@ -458,7 +458,7 @@ code {
 
 
 /*------------------------------------*\
-    #HEADER
+	#HEADER
 \*------------------------------------*/
 
 .header {
@@ -580,7 +580,7 @@ code {
 
 
 /*------------------------------------*\
-    #INTRO
+	#INTRO
 \*------------------------------------*/
 
 .intro {
@@ -699,40 +699,40 @@ code {
 	$outline: rgba(255,255,255,.1);
 	0%, 15%, 100% {
 		top: 15px;
-        left: 15px;
-        margin-left: -5px;
-        background: #ebcb63;
-        box-shadow: 15px 0 0 $outline, 30px 0 0 $outline;
+		left: 15px;
+		margin-left: -5px;
+		background: #ebcb63;
+		box-shadow: 15px 0 0 $outline, 30px 0 0 $outline;
 	}
 	25%, 40% {
 		top: 50%;
-        left: 100%;
-        width: 10px;
-        height: 10px;
-        margin-top: -5px;
-        margin-left: -25px;
-        background: #4b8ac4;
-        box-shadow: 0 0 0 200px rgba(255,255,255,0.05), 0 0 0 100px transparent;
+		left: 100%;
+		width: 10px;
+		height: 10px;
+		margin-top: -5px;
+		margin-left: -25px;
+		background: #4b8ac4;
+		box-shadow: 0 0 0 200px rgba(255,255,255,0.05), 0 0 0 100px transparent;
 	}
 	50%, 65% {
 		top: 10px;
-        left: 50%;
-        width: 8px;
-        height: 8px;
-        margin-top: 0;
-        margin-left: -4px;
-        background: #ece9f2;
-        box-shadow: 0 0 0 50px transparent, 0 0 0 rgba(255,255,255,0.05);
+		left: 50%;
+		width: 8px;
+		height: 8px;
+		margin-top: 0;
+		margin-left: -4px;
+		background: #ece9f2;
+		box-shadow: 0 0 0 50px transparent, 0 0 0 rgba(255,255,255,0.05);
 	}
 	75%, 90% {
 		top: 100%;
-        left: 50%;
-        width: 10px;
-        height: 10px;
-        margin-top: -25px;
-        margin-left: -5px;
-        background: #57c39f;
-        box-shadow: 0 0 0 200px rgba(255,255,255,0.05), 0 0 0 100px transparent;
+		left: 50%;
+		width: 10px;
+		height: 10px;
+		margin-top: -25px;
+		margin-left: -5px;
+		background: #57c39f;
+		box-shadow: 0 0 0 200px rgba(255,255,255,0.05), 0 0 0 100px transparent;
 	}
 }
 
@@ -757,7 +757,7 @@ code {
 
 
 /*------------------------------------*\
-    #FOOTER
+	#FOOTER
 \*------------------------------------*/
 
 .footer {
@@ -793,7 +793,7 @@ code {
 
 
 /*------------------------------------*\
-    #PAGE: ABOUT
+	#PAGE: ABOUT
 \*------------------------------------*/
 
 .main--about {
@@ -846,7 +846,7 @@ code {
 
 
 /*------------------------------------*\
-    #PAGE: WORK
+	#PAGE: WORK
 \*------------------------------------*/
 
 .main--work {
@@ -910,7 +910,7 @@ code {
 
 
 /*------------------------------------*\
-    #PAGE: BLOG
+	#PAGE: BLOG
 \*------------------------------------*/
 
 .is-blog {
@@ -942,8 +942,12 @@ code {
 
 	// Text
 	&--text {
-		color: #476363;
-		background: #a0cecb;
+		color: $main-color;
+		background: #e3e4e8;
+
+		.post__header a {
+			color: #5b5c65;
+		}
 	}
 
 	// Quote
@@ -1160,7 +1164,7 @@ code {
 
 
 /*------------------------------------*\
-    #PAGE: CONTACT
+	#PAGE: CONTACT
 \*------------------------------------*/
 
 .is-contact {
@@ -1260,7 +1264,7 @@ code {
 
 
 /*------------------------------------*\
-    #RESPONSIVE
+	#RESPONSIVE
 \*------------------------------------*/
 
 @media (max-width: 800px) {
