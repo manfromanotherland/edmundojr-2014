@@ -1,23 +1,21 @@
-
-
-/*------------------------------------*\
-	#IMPORTS
-\*------------------------------------*/
+//
+// Imports
+// ----------------------------------------------------------------------------
 
 @import "bourbon/bourbon";
 @import "normalize";
 
 
 
-/*------------------------------------*\
-	#SETTINGS
-\*------------------------------------*/
+//
+// Settings
+// ----------------------------------------------------------------------------
 
-/**
- * Media query for defined value
- * @param  {string}	$breakpoint array of values
- * @return {@media}
- */
+
+// Media query for defined value
+// @param  {string}	$breakpoint array of values
+// @return {@media}
+
 @mixin respond-to($breakpoint) {
 	// If the key exists in the map
 	@if map-has-key($breakpoints, $breakpoint) {
@@ -39,21 +37,18 @@ $breakpoints: (
 	'large':  800px
 ) !default;
 
-/*
- * Colors
- */
+
+// Colors
+// ----------------------------------------------
 
 $main-color: #737580;
 $bg-color:   #202126;
 
 
 
-
-
-
-/*------------------------------------*\
-	#DEFAULTS
-\*------------------------------------*/
+//
+// Defaults
+// ----------------------------------------------------------------------------
 
 html {
 	font-size: 1.125em;
@@ -67,10 +62,8 @@ html {
 	box-sizing: inherit;
 }
 
-/*
- * Remove the gap between elements
- * and the bottom of their containers
- */
+// Remove the gap between elements
+// and the bottom of their containers
 
 audio,
 canvas,
@@ -81,18 +74,14 @@ video {
 	vertical-align: middle;
 }
 
-/*
- * Responsive images
- */
+// Responsive images
 
 img {
 	max-width: 100%;
 	height: auto;
 }
 
-/*
- * Remove default fieldset styles
- */
+// Remove default fieldset styles
 
 fieldset {
 	border: 0;
@@ -100,21 +89,15 @@ fieldset {
 	padding: 0;
 }
 
-/*
- * Remove default figure margin
- */
+// Remove default figure margin
 
 figure { margin: 0; }
 
-/*
- * Allow only vertical resizing of textareas
- */
+// Allow only vertical resizing of textareas
 
 textarea { resize: vertical; }
 
-/*
- * Remove default iOS styles
- */
+// Remove default iOS styles
 
 input,
 textarea {
@@ -122,27 +105,23 @@ textarea {
 	@include appearance(none);
 }
 
-/*
- * Links default
- */
+// Links default
 
 a { color: inherit; }
 
 
 
+//
+// Helper classes
+// ----------------------------------------------------------------------------
 
 
-/*------------------------------------*\
-	#HELPER CLASSES
-\*------------------------------------*/
-
-/*
- * Clearfix
- */
+// Clearfix
+// ----------------------------------------------
 
 .clearfix:before,
 .clearfix:after {
-	content: " ";
+	content: "";
 	display: table;
 }
 
@@ -150,9 +129,9 @@ a { color: inherit; }
 	clear: both;
 }
 
-/*
- * Image replacement
- */
+
+// Image replacement
+// ----------------------------------------------
 
 .ir {
 	font: 0/0 a;
@@ -160,18 +139,18 @@ a { color: inherit; }
 	color: transparent;
 }
 
-/*
- * Hide elements
- */
+
+// Hide elements
+// ----------------------------------------------
 
 .hidden {
 	display: none;
 	visibility: hidden;
 }
 
-/*
- * Responsive video
- */
+
+// Responsive video
+// ----------------------------------------------
 
 .video-container {
 	position: relative;
@@ -190,11 +169,9 @@ a { color: inherit; }
 
 
 
-
-
-/*------------------------------------*\
-	#TYPOGRAPHY
-\*------------------------------------*/
+//
+// Typography
+// ----------------------------------------------------------------------------
 
 body {
 	font-family: "Proxima Nova", "proxima-nova", sans-serif;
@@ -215,9 +192,7 @@ body {
 	}
 }
 
-/*
- * Headlines
- */
+// Headlines
 
 .headline {
 	position: relative;
@@ -270,9 +245,7 @@ h4:first-child {
 
 }
 
-/*
- * Horizontal rule
- */
+// Horizontal rule
 
 hr {
 	display: block;
@@ -287,9 +260,9 @@ hr {
 
 q { font-style: italic; }
 
-/*
- * Buttons
- */
+
+// Buttons
+// ----------------------------------------------
 
 .btn {
 	@include transition(background .25s, box-shadow .25s);
@@ -311,15 +284,11 @@ q { font-style: italic; }
 	}
 }
 
-/*
- * Small
- */
+// Small
 
 small { font-size: .888888889em; }
 
-/*
- * Custom ampersand
- */
+// Custom ampersand
 
 .amp {
 	font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
@@ -327,10 +296,7 @@ small { font-size: .888888889em; }
 	font-weight: normal;
 }
 
-
-/*
- * Code
- */
+// Code
 
 pre {
 	padding: .75em 1em;
@@ -343,9 +309,9 @@ code {
 	font-size: .888888889em;
 }
 
-/*
- * Sidebar lists
- */
+
+// Sidebar lists
+// ----------------------------------------------
 
 .link-list {
 	padding: 0;
@@ -365,9 +331,7 @@ code {
 	}
 }
 
-/*
- * Let you know
- */
+// Let you know
 
 .let-you-know {
 	padding: 3em 0;
@@ -376,9 +340,10 @@ code {
 }
 
 
-/*------------------------------------*\
-	#LAYOUT
-\*------------------------------------*/
+
+//
+// layout
+// ----------------------------------------------------------------------------
 
 .container {
 	position: relative;
@@ -391,9 +356,9 @@ code {
 	}
 }
 
-/*
- * Main Area
- */
+
+// Main area
+// ----------------------------------------------
 
 .main {
 	position: relative;
@@ -404,18 +369,18 @@ code {
 	}
 }
 
-/*
- * Sidebar
- */
+
+// Sidebar
+// ----------------------------------------------
 
 .sidebar {
 	padding: 2em 2.5em;
 	border-radius: 4px;
 }
 
-/*
- * Grid System
- */
+
+// Grid system
+// ----------------------------------------------
 
 .col {
 	float: left;
@@ -432,12 +397,10 @@ code {
 .col-1-4    { width: 21%; }
 
 @media (max-width: 50em) {
-
 	.col-1-4 { width: 46%; }
 }
 
 @media (max-width: 600px) {
-
 	.col-1-2,
 	.col-1-3,
 	.col-2-3 {
@@ -447,11 +410,9 @@ code {
 
 
 
-
-
-/*------------------------------------*\
-	#HEADER
-\*------------------------------------*/
+//
+// Header
+// ----------------------------------------------------------------------------
 
 .header {
 	position: relative;
@@ -483,9 +444,9 @@ code {
 	}
 }
 
-/*
- * Logo
- */
+
+// Logo
+// ----------------------------------------------
 
 .logo {
 	@include user-select(none);
@@ -508,9 +469,9 @@ code {
 	}
 }
 
-/*
- * Navigation
- */
+
+// Navigation
+// ----------------------------------------------
 
 .nav {
 	display: inline-block;
@@ -540,7 +501,6 @@ code {
 
 
 @media (max-width: 600px) {
-
 	.nav {
 		padding-left: .75em;
 
@@ -548,11 +508,9 @@ code {
 			padding: .75em;
 		}
 	}
-
 }
 
 @media (max-width: 400px) {
-
 	.nav {
 		padding-left: .5em;
 
@@ -564,16 +522,13 @@ code {
 			padding-right: 0;
 		}
 	}
-
 }
 
 
 
-
-
-/*------------------------------------*\
-	#INTRO
-\*------------------------------------*/
+//
+// Intro
+// ----------------------------------------------------------------------------
 
 .intro {
 	padding: 5em 0;
@@ -591,23 +546,18 @@ code {
 }
 
 @media (max-width: 800px) {
-
 	.intro {
 		padding: 4em 0;
 	}
-
 }
 
 @media (max-width: 600px) {
-
 	.intro {
 		padding: 3em 0;
 	}
-
 }
 
 @media (max-width: 400px) {
-
 	.intro {
 		padding: 2em 0;
 
@@ -615,12 +565,11 @@ code {
 			font-size: 1.428571429em;
 		}
 	}
-
 }
 
-/*
- * Morphing Device
- */
+
+// Morphing device
+// ----------------------------------------------
 
 .device {
 	@include animation(morphDevice 10s infinite cubic-bezier(1,.015,.295,1.225) forwards);
@@ -733,7 +682,6 @@ code {
 	.device {
 		margin-top: 40%;
 	}
-
 }
 
 @media (max-width: 600px) {
@@ -741,16 +689,13 @@ code {
 	.device {
 		display: none;
 	}
-
 }
 
 
 
-
-
-/*------------------------------------*\
-	#FOOTER
-\*------------------------------------*/
+//
+// Footer
+// ----------------------------------------------------------------------------
 
 .footer {
 	clear: both;
@@ -777,16 +722,13 @@ code {
 			opacity: 1;
 		}
 	}
-
 }
 
 
 
-
-
-/*------------------------------------*\
-	#PAGE: ABOUT
-\*------------------------------------*/
+//
+// Page: about
+// ----------------------------------------------------------------------------
 
 .main--about {
 	color: #ccc;
@@ -794,9 +736,9 @@ code {
 	border-top: 3px solid lighten($bg-color, 3);
 }
 
-/*
- * Latest Posts
- */
+
+// Latest posts
+// ----------------------------------------------
 
 .latest-posts {
 	padding: 0;
@@ -830,16 +772,13 @@ code {
 		margin: 0;
 		border: none;
 	}
-
 }
 
 
 
-
-
-/*------------------------------------*\
-	#PAGE: WORK
-\*------------------------------------*/
+//
+// Page: work
+// ----------------------------------------------------------------------------
 
 .main--work {
 	color: #ccc;
@@ -847,14 +786,15 @@ code {
 	border-top: 3px solid rgba(255,255,255,.04);
 }
 
-/*
- * Single Job
- */
+
+// Single job
+// ----------------------------------------------
 
 .job {
 	padding: 3em 0;
 
 	// Job info
+
 	&__info {
 		position: relative;
 		z-index: 2;
@@ -867,6 +807,7 @@ code {
 	}
 
 	// Browser frame & image
+
 	&__image {
 		$border-color: #ece9f2;
 
@@ -883,6 +824,7 @@ code {
 		}
 
 		// Browser buttons
+
 		&:before {
 			position: absolute;
 			top: 10px;
@@ -899,11 +841,9 @@ code {
 
 
 
-
-
-/*------------------------------------*\
-	#PAGE: BLOG
-\*------------------------------------*/
+//
+// Page: blog
+// ----------------------------------------------------------------------------
 
 .is-blog {
 	background-image: url(../img/bg_typewriter.png);
@@ -918,9 +858,9 @@ code {
 	}
 }
 
-/*
- * Posts
- */
+
+// Posts
+// ----------------------------------------------
 
 .post {
 	padding: 2em 2.5em;
@@ -928,11 +868,13 @@ code {
 	border-radius: 4px;
 
 	// Post title
+
 	&__header a {
 		text-decoration: none;
 	}
 
 	// Text
+
 	&--text {
 		color: $main-color;
 		background: #e3e4e8;
@@ -943,6 +885,7 @@ code {
 	}
 
 	// Quote
+
 	&--quote {
 		color: #90693d;
 		background: #e8ce4d;
@@ -966,6 +909,7 @@ code {
 	}
 
 	// Photo
+
 	&--photo {
 		color: #ccc;
 		background: #808080;
@@ -981,18 +925,21 @@ code {
 	}
 
 	// Link
+
 	&--link {
 		color: #d3cce6;
 		background: #684a9c;
 	}
 
 	// Video
+
 	&--video {
 		color: #ffd9de;
 		background: #d8334a;
 	}
 
 	// Post Images
+
 	.pic {
 		display: block;
 		margin: 2em -2.5em;
@@ -1000,12 +947,11 @@ code {
 			width: 100%;
 		}
 	}
-
 }
 
-/*
- * Tags page
- */
+
+// Tags page
+// ----------------------------------------------
 
 .post--tags {
 	background: #fff;
@@ -1035,8 +981,9 @@ code {
 	}
 }
 
-/* Post meta
-   ========================================================================== */
+
+// Post meta
+// ----------------------------------------------
 
 .post__meta {
 	padding-top: 1em;
@@ -1069,14 +1016,15 @@ code {
 	}
 
 	// Date
+
 	&--info li:first-child {
 		margin: 0;
 	}
 }
 
-/*
- * Share
- */
+
+// Share
+// ----------------------------------------------
 
 .post__meta--actions {
 	float: right;
@@ -1086,6 +1034,7 @@ code {
 	cursor: pointer;
 
 	// Tooltip
+
 	div {
 		@include transform-origin(top center);
 		@include transform(scale(1.1));
@@ -1103,6 +1052,7 @@ code {
 		opacity: 0;
 
 		// Arrow head
+
 		&:before {
 			position: absolute;
 			top: -8px;
@@ -1132,16 +1082,15 @@ code {
 		&:last-child  { border-radius: 0 0 4px 4px; }
 		& + a         { border-top: 1px solid #ddd; }
 	}
-
 }
 
 .share--twitter     { color: #55acee; }
 .share--facebook    { color: #3c5c95; }
 .share--google-plus { color: #d94a3a; }
 
-/*
- * Post Comments / Disqus
- */
+
+// Post Comments / Disqus
+// ----------------------------------------------
 
 .comments {
 	min-height: 300px;
@@ -1153,11 +1102,9 @@ code {
 
 
 
-
-
-/*------------------------------------*\
-	#PAGE: CONTACT
-\*------------------------------------*/
+//
+// Page: contact
+// ----------------------------------------------------------------------------
 
 .is-contact {
 	background-image: url(../img/bg_stamps.png);
@@ -1174,9 +1121,9 @@ code {
 	}
 }
 
-/*
- * Contact Form
- */
+
+// Contact form
+// ----------------------------------------------
 
 .contact-form {
 
@@ -1205,6 +1152,7 @@ code {
 	}
 
 	// Submit
+
 	.submit {
 		@include transition(color .25s, background .25s);
 		position: relative;
@@ -1230,15 +1178,15 @@ code {
 	}
 
 	// Placeholder
+
 	@include placeholder {
 		color: #ccbb66;
 	}
 }
 
 
-/*
- * Alert / Response
- */
+// Alert / response
+// ----------------------------------------------
 
 .alert { float: right; }
 
@@ -1248,16 +1196,9 @@ code {
 		float: none;
 		margin-top: 1em;
 	}
-
 }
 
-
-
-
-
-/*------------------------------------*\
-	#RESPONSIVE
-\*------------------------------------*/
+// Responsive
 
 @media (max-width: 800px) {
 
@@ -1266,7 +1207,6 @@ code {
 	.sidebar {
 		padding: 1.5em 2em;
 	}
-
 }
 
 @media (max-width: 600px) {
@@ -1276,5 +1216,4 @@ code {
 	.sidebar {
 		padding: 1.5em 2em;
 	}
-
 }
