@@ -34,4 +34,6 @@ sass:
 
 exclude:
  - _deploy.sh
- - config.codekit
+ - Gruntfile.js
+ - package.json
+ - node_modules/
