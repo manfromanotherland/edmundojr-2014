@@ -2,7 +2,6 @@
 // Imports
 // ----------------------------------------------------------------------------
 
-@import "bourbon/bourbon";
 @import "normalize";
 
 
@@ -11,7 +10,7 @@
 // Settings
 // ----------------------------------------------------------------------------
 
-
+//
 // Media query for defined value
 // @param  {string}	$breakpoint array of values
 // @return {@media}
@@ -57,8 +56,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
 	box-sizing: inherit;
 }
 
@@ -91,23 +90,29 @@ fieldset {
 
 // Remove default figure margin
 
-figure { margin: 0; }
+figure {
+	margin: 0;
+}
 
 // Allow only vertical resizing of textareas
 
-textarea { resize: vertical; }
+textarea {
+	resize: vertical;
+}
 
 // Remove default iOS styles
 
 input,
 textarea {
 	border-radius: 4px;
-	@include appearance(none);
+	appearance: none;
 }
 
 // Links default
 
-a { color: inherit; }
+a {
+	color: inherit;
+}
 
 
 
@@ -115,23 +120,23 @@ a { color: inherit; }
 // Helper classes
 // ----------------------------------------------------------------------------
 
-
 // Clearfix
-// ----------------------------------------------
 
-.clearfix:before,
-.clearfix:after {
-	content: "";
-	display: table;
-}
+.clearfix {
 
-.clearfix:after {
-	clear: both;
+	&::before,
+	&::after {
+		content: "";
+		display: table;
+	}
+
+	&::after {
+		clear: both;
+	}
 }
 
 
 // Image replacement
-// ----------------------------------------------
 
 .ir {
 	font: 0/0 a;
@@ -139,9 +144,7 @@ a { color: inherit; }
 	color: transparent;
 }
 
-
 // Hide elements
-// ----------------------------------------------
 
 .hidden {
 	display: none;
@@ -175,7 +178,6 @@ a { color: inherit; }
 
 body {
 	font-family: "Proxima Nova", "proxima-nova", sans-serif;
-	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: $main-color;
@@ -198,7 +200,7 @@ body {
 	position: relative;
 	padding-bottom: .4em;
 
-	&:before {
+	&::before {
 		position: absolute;
 		bottom: 0;
 		width: 80px;
@@ -218,9 +220,17 @@ h4 {
 	margin-bottom: .5em;
 }
 
-h1 { font-size: 3em; }
-h2 { font-size: 2.4em; }
-h3 { font-size: 2em; }
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 2em;
+}
 
 h4 {
 	font-size: 1.333333333em;
@@ -258,14 +268,15 @@ hr {
 	border-radius: 4px;
 }
 
-q { font-style: italic; }
+q {
+	font-style: italic;
+}
 
 
 // Buttons
 // ----------------------------------------------
 
 .btn {
-	@include transition(background .25s, box-shadow .25s);
 	position: relative;
 	display: inline-block;
 	padding: .4em .8em;
@@ -276,6 +287,7 @@ q { font-style: italic; }
 	border: 2px solid rgba(255,255,255,.2);
 	border-radius: 4px;
 	box-shadow: 4px 4px 0 rgba(255,255,255,.05);
+	transition: background .25s, box-shadow .25s;
 
 	&:hover,
 	&:focus {
@@ -286,7 +298,9 @@ q { font-style: italic; }
 
 // Small
 
-small { font-size: .888888889em; }
+small {
+	font-size: .888888889em;
+}
 
 // Custom ampersand
 
@@ -319,10 +333,10 @@ code {
 	list-style: none;
 
 	a {
-		@include transition(opacity .25s);
 		text-decoration: none;
 		color: inherit;
 		border-bottom: 1px solid rgba(0,0,0,.25);
+		transition: opacity .25s;
 
 		&:hover,
 		&:focus {
@@ -418,7 +432,7 @@ code {
 	position: relative;
 	padding: 2.5em 0;
 
-	&:before {
+	&::before {
 		position: absolute;
 		left: 0;
 		bottom: -2px;
@@ -449,10 +463,10 @@ code {
 // ----------------------------------------------
 
 .logo {
-	@include user-select(none);
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0;
+	user-select: none;
 
 	.is-about & {
 		pointer-events: none;
@@ -481,12 +495,12 @@ code {
 	padding-left: 1.5em;
 
 	a {
-		@include transition(color .25s);
 		display: inline-block;
 		vertical-align: middle;
 		padding: 1em;
 		text-decoration: none;
 		color: #737580;
+		transition: color .25s;
 	}
 
 	a:hover,
@@ -572,8 +586,6 @@ code {
 // ----------------------------------------------
 
 .device {
-	@include animation(morphDevice 10s infinite cubic-bezier(1,.015,.295,1.225) forwards);
-	@include backface-visibility(hidden);
 	position: relative;
 	overflow: hidden;
 	width: 100%;
@@ -582,10 +594,10 @@ code {
 	border: 2px solid #ebcb63;
 	border-radius: 6px;
 	box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 rgba(255,255,255,.1);
+	backface-visibility: hidden;
+	animation: morphDevice 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
 
 	figcaption {
-		@include animation(morphButtons 10s infinite cubic-bezier(1,.015,.295,1.225) forwards);
-		@include backface-visibility(hidden);
 		position: absolute;
 		top: 15px;
 		left: 15px;
@@ -594,49 +606,51 @@ code {
 		background: rgba(255,255,255,.1);
 		box-shadow: 15px 0 0 rgba(255,255,255,.1), 30px 0 0 rgba(255,255,255,.1);
 		border-radius: 50%;
+		animation: morphButtons 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
+		backface-visibility: hidden;
 	}
 }
 
-@include keyframes(morphDevice) {
+@keyframes morphDevice {
 	$outline: rgba(255,255,255,.1);
 	0%, 15% {
-		@include transform(rotate(0));
 		width: 100%;
 		padding-top: 70%;
 		border-color: #ebcb63;
 		box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
+		transform: rotate(0);
 	}
 	25%, 40% {
-		@include transform(rotate(90deg) translateX(30px));
 		width: 70%;
 		padding-top: 55%;
 		border-color: #4b8ac4;
 		box-shadow: 10px -10px 0 -2px $bg-color, 10px -10px 0 $outline;
+		transform: rotate(90deg) translateX(30px);
 	}
 	50%, 65% {
-		@include transform(rotate(180deg) translateY(-40px));
 		width: 25%;
 		padding-top: 40%;
 		border-color: #ece9f2;
 		box-shadow: -8px -8px 0 -2px $bg-color, -8px -8px 0 $outline;
+		transform: rotate(180deg) translateY(-40px);
 	}
 	75%, 90% {
-		@include transform(rotate(270deg) translateX(0));
 		width: 55%;
 		padding-top: 70%;
 		border-color: #57c39f;
 		box-shadow: -10px 10px 0 -2px $bg-color, -10px 10px 0 $outline;
+		transform: rotate(270deg) translateX(0);
 	}
 	100% {
-		@include transform(rotate(360deg));
 		width: 100%;
 		padding-top: 70%;
 		border-color: #ebcb63;
 		box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
+		transform: rotate(360deg);
 	}
 }
 
-@include keyframes(morphButtons) {
+@keyframes morphButtons {
 	$outline: rgba(255,255,255,.1);
 	0%, 15%, 100% {
 		top: 15px;
@@ -711,12 +725,12 @@ code {
 	}
 
 	a {
-		@include transition(opacity .25s);
 		text-decoration: none;
 		border-bottom: 1px solid;
 		border-color: inherit;
 		color: inherit;
 		opacity: .5;
+		transition: opacity .25s;
 
 		&:hover {
 			opacity: 1;
@@ -732,8 +746,8 @@ code {
 
 .main--about {
 	color: #ccc;
-	background: darken($bg-color, 2);
-	border-top: 3px solid lighten($bg-color, 3);
+	background: $bg-color;
+	border-top: 3px solid $bg-color;
 }
 
 
@@ -758,9 +772,9 @@ code {
 		padding-right: .8em;
 		margin-right: .6em;
 		font-size: .888888889em;
+		font-feature-settings: "tnum";
 		opacity: .5;
 		border-right: 1px solid rgba(0,0,0,.2);
-		@include font-feature-settings("tnum");
 	}
 }
 
@@ -825,7 +839,7 @@ code {
 
 		// Browser buttons
 
-		&:before {
+		&::before {
 			position: absolute;
 			top: 10px;
 			left: 12px;
@@ -972,11 +986,11 @@ code {
 	}
 
 	time {
-		@include font-feature-settings("tnum");
 		display: inline-block;
 		padding-right: .8em;
 		margin-right: .6em;
 		font-size: .888888889em;
+		font-feature-settings: tnum;
 		border-right: 1px solid #ddd;
 	}
 }
@@ -1004,9 +1018,9 @@ code {
 	}
 
 	a {
-		@include transition(color .3s);
 		display: inline-block;
 		text-decoration: none;
+		transition: color .25s;
 	}
 
 	svg {
@@ -1036,9 +1050,6 @@ code {
 	// Tooltip
 
 	div {
-		@include transform-origin(top center);
-		@include transform(scale(1.1));
-		@include transition(all .3s);
 		position: absolute;
 		top: 100%;
 		left: -39px;
@@ -1050,10 +1061,13 @@ code {
 		box-shadow: 0 1px 5px rgba(0,0,0,.1);
 		visibility: hidden;
 		opacity: 0;
+		transform-origin: top center;
+		transform: scale(1.1);
+		transition: all .25s;
 
 		// Arrow head
 
-		&:before {
+		&::before {
 			position: absolute;
 			top: -8px;
 			left: 50%;
@@ -1066,9 +1080,9 @@ code {
 	}
 
 	&:hover div {
-		@include transform(none);
 		visibility: visible;
 		opacity: 1;
+		transform: none;
 	}
 
 	a {
@@ -1129,7 +1143,6 @@ code {
 
 	input,
 	textarea {
-		@include transition(border .25s);
 		width: 100%;
 		padding: .8em 1.2em;
 		margin: 2% 0;
@@ -1138,6 +1151,7 @@ code {
 		border: 1px solid #e6d273;
 		border: none;
 		box-shadow: inset 0 1px 2px #dcb55f;
+		transition: border .25s;
 	}
 
 	textarea {
@@ -1154,7 +1168,6 @@ code {
 	// Submit
 
 	.submit {
-		@include transition(color .25s, background .25s);
 		position: relative;
 		width: auto;
 		margin: 0;
@@ -1164,6 +1177,7 @@ code {
 		background: #fffb89;
 		border: none;
 		box-shadow: 0 1px 2px #dcc45f;
+		transition: color .25s, background .25s;
 
 		&:hover,
 		&:focus {
@@ -1179,7 +1193,7 @@ code {
 
 	// Placeholder
 
-	@include placeholder {
+	::placeholder {
 		color: #ccbb66;
 	}
 }
@@ -1188,7 +1202,9 @@ code {
 // Alert / response
 // ----------------------------------------------
 
-.alert { float: right; }
+.alert {
+	float: right;
+}
 
 @media (max-width: 600px) {
 
