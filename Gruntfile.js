@@ -39,7 +39,7 @@ module.exports = function (grunt) {
 				processors: require('autoprefixer-core')({browsers: 'last 2 versions'}),
 			},
 			dist: {
-				src: '_site/assets/css/*.css',
+				src: '_site/assets/css/main.css',
 			},
 		},
 

@@ -1,0 +1,30 @@
+//
+// Footer
+// ----------------------------------------------------------------------------
+
+.footer {
+	clear: both;
+	padding: 2.5em 0;
+	line-height: 1.2em;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	span {
+		white-space: nowrap;
+	}
+
+	a {
+		text-decoration: none;
+		border-bottom: 1px solid;
+		border-color: inherit;
+		color: inherit;
+		opacity: .5;
+		transition: opacity .25s;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
