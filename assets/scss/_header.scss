@@ -68,6 +68,14 @@
 	text-transform: uppercase;
 	padding-left: 1.5em;
 
+	@include respond-to("medium") {
+		padding-left: .75em;
+	}
+
+	@include respond-to("small") {
+		padding-left: .5em;
+	}
+
 	a {
 		display: inline-block;
 		vertical-align: middle;
@@ -75,6 +83,18 @@
 		text-decoration: none;
 		color: #737580;
 		transition: color .25s;
+
+		@include respond-to("medium") {
+			padding: .75em;
+		}
+
+		@include respond-to("small") {
+			padding: .5em;
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
 	}
 
 	a:hover,
@@ -88,31 +108,6 @@
 }
 
 
-@media (max-width: 600px) {
-	.nav {
-		padding-left: .75em;
-
-		a {
-			padding: .75em;
-		}
-	}
-}
-
-@media (max-width: 400px) {
-	.nav {
-		padding-left: .5em;
-
-		a {
-			padding: .5em;
-		}
-
-		a:last-child {
-			padding-right: 0;
-		}
-	}
-}
-
-
 
 //
 // Intro
@@ -120,6 +115,18 @@
 
 .intro {
 	padding: 5em 0;
+
+	@include respond-to("large") {
+		padding: 4em 0;
+	}
+
+	@include respond-to("medium") {
+		padding: 3em 0;
+	}
+
+	@include respond-to("small") {
+		padding: 2em 0;
+	}
 
 	h1 {
 		margin: 0;
@@ -130,30 +137,13 @@
 		margin: .8em 0 0;
 		font-size: 1.555555556em;
 		line-height: 1.266666667em;
-	}
-}
 
-@media (max-width: 800px) {
-	.intro {
-		padding: 4em 0;
-	}
-}
-
-@media (max-width: 600px) {
-	.intro {
-		padding: 3em 0;
-	}
-}
-
-@media (max-width: 400px) {
-	.intro {
-		padding: 2em 0;
-
-		p {
+		@include respond-to("small") {
 			font-size: 1.428571429em;
 		}
 	}
 }
+
 
 
 // Morphing device
@@ -170,6 +160,14 @@
 	box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 rgba(255,255,255,.1);
 	backface-visibility: hidden;
 	animation: morphDevice 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
+
+	@include respond-to("large") {
+		margin-top: 40%;
+	}
+
+	@include respond-to("medium") {
+		display: none;
+	}
 
 	figcaption {
 		position: absolute;
@@ -262,19 +260,5 @@
 		margin-left: -5px;
 		background: #57c39f;
 		box-shadow: 0 0 0 200px rgba(255,255,255,0.05), 0 0 0 100px transparent;
-	}
-}
-
-@media (max-width: 800px) {
-
-	.device {
-		margin-top: 40%;
-	}
-}
-
-@media (max-width: 600px) {
-
-	.device {
-		display: none;
 	}
 }
