@@ -2,9 +2,6 @@
 
 module.exports = function (grunt) {
 
-	 // Show elapsed time after tasks run to visualize performance
-	require('time-grunt')(grunt);
-
 	// Load all Grunt tasks that are listed in package.json
 	require('load-grunt-tasks')(grunt);
 
@@ -62,14 +59,27 @@ module.exports = function (grunt) {
 		// watch for files to change and run tasks when they do
 		watch: {
 			livereload: {
-				files: ['_config.yml', 'index.html', '_layouts/**', '_includes/**', '_posts/**', 'assets/**'],
+				files: [
+					'_config.yml',
+					'assets/**',
+					'index.html',
+					'blog/**',
+					'work/**',
+					'contact/**',
+					'_layouts/**',
+					'_includes/**',
+					'_posts/**'],
 				options: {
 					livereload: true
 				},
 			},
-			sass: {
+			styles: {
 				files: ['**/*.scss'],
-				tasks: ['sass'],
+				tasks: ['sass', 'postcss'],
+			},
+			scrips: {
+				files: ['assets/js/main.js'],
+				tasks: ['jshint', 'uglify'],
 			},
 		},
 
