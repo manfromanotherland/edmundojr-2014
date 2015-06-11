@@ -26,3 +26,20 @@ $(function () {
 	});
 
 });
+
+function headerParallax() {
+
+	// Variables
+	var scrollVal = Math.max(window.pageYOffset,0),
+		bgImage = document.querySelector('.bg-image');
+
+	bgImage.style.webkitTransform = 'translate3d(0, ' + -(scrollVal/3) + 'px, 0)';
+	bgImage.style.MozTransform = 'translate3d(0, ' + -(scrollVal/3) + 'px, 0)';
+	bgImage.style.msTransform = 'translateY(' + -(scrollVal/3) + 'px)';
+	bgImage.style.OTransform = 'translate3d(0, ' + -(scrollVal/3) + 'px, 0)';
+	bgImage.style.transform = 'translate3d(0, ' + -(scrollVal/3) + 'px, 0)';
+	bgImage.style.opacity = 1-(scrollVal/500);
+
+}
+
+document.addEventListener('scroll', headerParallax, false);
