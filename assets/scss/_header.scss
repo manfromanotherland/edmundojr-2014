@@ -18,15 +18,15 @@
 		content: "";
 	}
 
-	@include respond-to("large") {
+	@include respond-to(large) {
 		padding: 2em 0;
 	}
 
-	@include respond-to("medium") {
+	@include respond-to(medium) {
 		padding: 1.5em 0;
 	}
 
-	@include respond-to("small") {
+	@include respond-to(tiny) {
 		padding: 1em 0;
 		text-align: center;
 	}
@@ -46,11 +46,11 @@
 		pointer-events: none;
 	}
 
-	@include respond-to("medium") {
+	@include respond-to(medium) {
 		max-width: 60px;
 	}
 
-	@include respond-to("small") {
+	@include respond-to(tiny) {
 		display: block;
 		max-width: 40px;
 		margin: 0 auto 10px;
@@ -68,11 +68,11 @@
 	text-transform: uppercase;
 	padding-left: 1.5em;
 
-	@include respond-to("medium") {
+	@include respond-to(medium) {
 		padding-left: .75em;
 	}
 
-	@include respond-to("small") {
+	@include respond-to(tiny) {
 		padding-left: .5em;
 	}
 
@@ -81,14 +81,15 @@
 		vertical-align: middle;
 		padding: 1em;
 		text-decoration: none;
-		color: #737580;
-		transition: color .25s;
+		color: #e3e4e8;
+		opacity: .5;
+		transition: opacity .25s;
 
-		@include respond-to("medium") {
+		@include respond-to(medium) {
 			padding: .75em;
 		}
 
-		@include respond-to("small") {
+		@include respond-to(tiny) {
 			padding: .5em;
 
 			&:last-child {
@@ -99,11 +100,11 @@
 
 	a:hover,
 	a:focus {
-		color: #acaeb9;
+		opacity: .75;
 	}
 
 	.is-active {
-		color: #e3e4e8;
+		opacity: 1;
 	}
 }
 
@@ -116,15 +117,15 @@
 .intro {
 	padding: 5em 0;
 
-	@include respond-to("large") {
+	@include respond-to(large) {
 		padding: 4em 0;
 	}
 
-	@include respond-to("medium") {
+	@include respond-to(medium) {
 		padding: 3em 0;
 	}
 
-	@include respond-to("small") {
+	@include respond-to(tiny) {
 		padding: 2em 0;
 	}
 
@@ -138,7 +139,7 @@
 		font-size: 1.555555556em;
 		line-height: 1.266666667em;
 
-		@include respond-to("small") {
+		@include respond-to(tiny) {
 			font-size: 1.428571429em;
 		}
 	}
@@ -161,11 +162,11 @@
 	backface-visibility: hidden;
 	animation: morphDevice 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
 
-	@include respond-to("large") {
+	@include respond-to(large) {
 		margin-top: 40%;
 	}
 
-	@include respond-to("medium") {
+	@include respond-to(medium) {
 		display: none;
 	}
 

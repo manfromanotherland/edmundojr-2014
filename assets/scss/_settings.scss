@@ -2,12 +2,18 @@
 // Settings
 // ----------------------------------------------------------------------------
 
-
 // Colors
-// ----------------------------------------------
 
-$main-color: #737580;
-$bg-color:   #202126;
+$main-color : #737580;
+$bg-color   : #202126;
+
+// Breakpoints
+
+$huge   : 1200px;
+$large  : 1000px;
+$medium : 800px;
+$small  : 600px;
+$tiny   : 400px;
 
 
 
@@ -15,27 +21,40 @@ $bg-color:   #202126;
 // Mixins
 // ----------------------------------------------------------------------------
 
-// Media query for defined value
-// @param  {string}	$breakpoint array of values
-// @return {@media}
+// Manage responsive breakpoints
+// ----------------------------------------------
+// .element {
+//     @include respond-to(huge)   { // styles }
+//     @include respond-to(big)    { // styles }
+//     @include respond-to(medium) { // styles }
+//     @include respond-to(small)  { // styles }
+//     @include respond-to(tiny)   { // styles }
+// }
 
-@mixin respond-to($breakpoint) {
-	// If the key exists in the map
-	@if map-has-key($breakpoints, $breakpoint) {
-		// Prints a media query based on the value
-		@media (max-width: map-get($breakpoints, $breakpoint)) {
+@mixin respond-to($media) {
+	@if $media == huge {
+		@media (min-width: $huge) {
 			@content;
 		}
 	}
-	// If the key doesn't exist in the map
-	@else {
-		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-		+ "Available breakpoints are: #{map-keys($breakpoints)}.";
+	@else if $media == large {
+		@media (max-width: $large) {
+			@content;
+		}
+	}
+	@else if $media == medium {
+		@media (max-width: $medium) {
+			@content;
+		}
+	}
+	@else if $media == small {
+		@media (max-width: $small) {
+			@content;
+		}
+	}
+	@else if $media == tiny {
+		@media (max-width: $tiny) {
+			@content;
+		}
 	}
 }
-
-$breakpoints: (
-	'small':  400px,
-	'medium': 600px,
-	'large':  800px
-) !default;
