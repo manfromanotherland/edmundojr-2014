@@ -301,7 +301,6 @@ code {
 	a {
 		text-decoration: none;
 		color: inherit;
-		border-bottom: 1px solid rgba(0,0,0,.25);
 		transition: opacity .25s;
 
 		&:hover,
@@ -341,13 +340,6 @@ code {
 	}
 }
 
-.bg-image {
-	position: fixed;
-	top: 0;
-	right: 8%;
-	z-index: -1;
-}
-
 
 // Main area
 // ----------------------------------------------
@@ -372,14 +364,13 @@ code {
 
 	&--work {
 		padding: 0;
-		background: #18181c;
 	}
 
 	// Contact
 
 	&--contact {
 		color: #806540;
-		background: #ffea80;
+		background: #ffed75;
 	}
 }
 
@@ -528,11 +519,9 @@ code {
 
 		// Role
 
-		span {
-			display: block;
-			margin-bottom: 1em;
+		h4 {
+			margin: 0;
 			font-size: .875em;
-			font-weight: bold;
 			text-transform: uppercase;
 			opacity: .5;
 			transition: all .4s;
@@ -549,6 +538,17 @@ code {
 			transform: translate3d(0,-50%,0) scale(.9);
 			transition: all .4s;
 		}
+
+		// Call
+
+		// span {
+		// 	display: block;
+		// 	margin-top: 1em;
+		// 	font-size: .875em;
+		// 	font-weight: bold;
+		// 	text-transform: uppercase;
+		// 	opacity: .5;
+		// }
 
 		// Image
 
@@ -568,7 +568,7 @@ code {
 				transform: translate3d(0,-25%,0) scale(1.1);
 			}
 
-			span {
+			h4 {
 				opacity: 0;
 				transform: translate3d(0,50%,0) scale(1.1);
 			}
@@ -609,7 +609,6 @@ code {
 			color: #737580;
 			background: #fff;
 		}
-
 	}
 }
 
@@ -884,12 +883,10 @@ code {
 // Page: contact
 // ----------------------------------------------------------------------------
 
-.main--contact {
-	.sidebar {
-		margin-top: 4em;
-		color: #5f7993;
-		background: #abddd4;
-	}
+.main--contact .sidebar {
+	margin-top: 4em;
+	color: #5f7993;
+	background: #9eded3;
 }
 
 
