@@ -2,13 +2,6 @@
   "name": "edmundojr",
   "version": "0.7.0",
   "author": "Edmundo Santos",
-  "repository": {
-    "type": "git",
-    "url": "https://bitbucket.org/edmundojr/edmundojr"
-  },
-  "bugs": {
-    "url": "https://bitbucket.org/edmundojr/edmundojr/issues"
-  },
   "devDependencies": {
     "autoprefixer-core": "^5.2.0",
     "grunt": "^0.4.5",
