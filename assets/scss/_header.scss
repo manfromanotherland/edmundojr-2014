@@ -96,11 +96,35 @@
 				padding-right: 0;
 			}
 		}
+
+		span {
+			position: relative;
+			display: inline-block;
+			transition: all .3s;
+
+			&::before {
+				position: absolute;
+				top: 50%;
+				opacity: 0;
+				content: attr(data-hover);
+				transition: all .3s;
+			}
+		}
 	}
 
 	a:hover,
 	a:focus {
 		opacity: .75;
+
+		span {
+			color: transparent;
+			transform: translate3d(0,-50%,0);
+
+			&::before {
+				color: #e3e4e8;
+				opacity: 1;
+			}
+		}
 	}
 
 	.is-active {
