@@ -495,6 +495,7 @@ code {
 	&__item {
 		float: left;
 		position: relative;
+		overflow: hidden;
 		width: 50%;
 		padding: .390625%;
 		text-decoration: none;
@@ -538,17 +539,6 @@ code {
 			transform: translate3d(0,-50%,0) scale(.9);
 			transition: all .4s;
 		}
-
-		// Call
-
-		// span {
-		// 	display: block;
-		// 	margin-top: 1em;
-		// 	font-size: .875em;
-		// 	font-weight: bold;
-		// 	text-transform: uppercase;
-		// 	opacity: .5;
-		// }
 
 		// Image
 
@@ -622,8 +612,8 @@ code {
 	padding: 0;
 
 	.sidebar {
-		color: rgba(255,255,255,.4);
-		background: rgba(255,255,255,.1);
+		color: #806540;
+		background: #ffed75;
 	}
 }
 
