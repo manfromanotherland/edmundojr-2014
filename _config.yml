@@ -8,8 +8,8 @@ baseurl:          "/"
 
 permalink:        /:categories/:title/
 
-# paginate:         2
-# paginate_path:    "/blog/page:num/"
+paginate:         5
+paginate_path:    "/blog/page:num/"
 
 author:
   name:           'Edmundo Santos'

@@ -7,8 +7,12 @@
 	padding: 2.5em 0;
 	line-height: 1.2em;
 
-	span {
-		white-space: nowrap;
+	@include respond-to(small) {
+		padding: 1.5em 0;
+	}
+
+	@include respond-to(tiny) {
+		padding: 1em 0;
 	}
 
 	a {

@@ -125,6 +125,18 @@ a {
 	padding-bottom: 64%;
 	margin: 2em -2.5em;
 
+	@include respond-to(large) {
+		margin: 1.5em -2em;
+	}
+
+	@include respond-to(medium) {
+		margin: 1.5em -1.5em;
+	}
+
+	@include respond-to(tiny) {
+		margin: 1em -1em;
+	}
+
 	iframe {
 		position: absolute;
 		top: 0;
@@ -402,6 +414,14 @@ code {
 	@include respond-to(large) {
 		padding: 1.5em 2em;
 	}
+
+	@include respond-to(medium) {
+		padding: 1.5em;
+	}
+
+	@include respond-to(tiny) {
+		padding: 1em;
+	}
 }
 
 
@@ -467,7 +487,7 @@ code {
 
 .skills {
 	padding: 4em 0;
-	margin-top: 3.5em;
+	margin-top: 4em;
 	background: #f1f2f4;
 
 	&__title {
@@ -512,6 +532,12 @@ code {
 	margin-top: -.781250%;
 	text-align: center;
 
+	@include respond-to(medium) {
+		width: 90%;
+		padding: 0;
+		margin: 0 auto;
+	}
+
 	// Row
 
 	&__row {
@@ -528,6 +554,11 @@ code {
 		padding: .390625%;
 		text-decoration: none;
 		border-radius: 2px;
+
+		@include respond-to(medium) {
+			width: 100%;
+			padding: 0 0 6.4%;
+		}
 
 		figure {
 			overflow: hidden;
@@ -568,6 +599,10 @@ code {
 			opacity: 0;
 			transform: translate3d(0,-50%,0) scale(.9);
 			transition: all .4s;
+
+			@include respond-to(medium) {
+				font-size: .8em;
+			}
 		}
 
 		// Image
@@ -659,6 +694,14 @@ code {
 
 	@include respond-to(large) {
 		padding: 1.5em 2em;
+	}
+
+	@include respond-to(medium) {
+		padding: 1.5em;
+	}
+
+	@include respond-to(tiny) {
+		padding: 1em;
 	}
 
 	// Post title
@@ -813,6 +856,14 @@ code {
 
 	&--info li:first-child {
 		margin: 0;
+
+		@include respond-to(medium) {
+			display: block;
+
+			& + li {
+				margin-left: 0;
+			}
+		}
 	}
 }
 
@@ -894,6 +945,50 @@ code {
 
 	@include respond-to(large) {
 		padding: 1.5em 2em;
+	}
+}
+
+
+// Blog pagination
+// ----------------------------------------------
+
+.pagination {
+	overflow: hidden;
+	padding: 1em 2.5em;
+	margin-bottom: 6.4%;
+	font-weight: 600;
+	text-transform: uppercase;
+	background: #fff;
+	border-radius: 2px;
+
+	@include respond-to(large) {
+		padding: 1em 2em;
+	}
+
+	@include respond-to(medium) {
+		padding: 1em 1.5em;
+	}
+
+	@include respond-to(tiny) {
+		padding: .5em 1em;
+	}
+
+	a {
+		text-decoration: none;
+		color: #737580;
+	}
+
+	span {
+		pointer-events: none;
+		opacity: .4;
+	}
+
+	&__prev {
+		float: left;
+	}
+
+	&__next {
+		float: right;
 	}
 }
 
