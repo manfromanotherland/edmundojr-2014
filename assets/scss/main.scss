@@ -164,12 +164,23 @@ body {
 
 	&::before {
 		position: absolute;
+		left: 0;
 		bottom: 0;
 		width: 80px;
 		border-bottom: 3px solid;
 		border-color: inherit;
 		opacity: .25;
 		content: "";
+	}
+
+	&--center {
+		text-align: center;
+
+		&::before {
+			position: absolute;
+			left: 50%;
+			margin-left: -40px;
+		}
 	}
 }
 
@@ -231,7 +242,6 @@ hr {
 	margin: 2em auto;
 	background: rgba(0,0,0,.2);
 	border: none;
-	border-radius: 2px;
 }
 
 q {
@@ -250,14 +260,14 @@ q {
 	font-weight: 600;
 	text-decoration: none;
 	text-transform: uppercase;
-	border: 2px solid rgba(255,255,255,.2);
+	border: 2px solid rgba(000,000,000,.2);
 	border-radius: 2px;
-	box-shadow: 4px 4px 0 rgba(255,255,255,.05);
+	box-shadow: 4px 4px 0 rgba(000,000,000,.05);
 	transition: background .25s, box-shadow .25s;
 
 	&:hover,
 	&:focus {
-		background: rgba(255,255,255,.05);
+		background: rgba(0,0,0,.05);
 		box-shadow: 0 0 0 transparent;
 	}
 }
@@ -330,6 +340,10 @@ code {
 	max-width: 52.222222222em;
 	margin: 0 auto;
 
+	&--narrow {
+		max-width: 45.222222222em;
+	}
+
 	&--wide {
 		max-width: 57.222222222em;
 	}
@@ -346,7 +360,7 @@ code {
 
 .main {
 	position: relative;
-	padding: 5em 0;
+	padding: 4em 0;
 
 	@include respond-to(medium) {
 		padding: 2.5em 0;
@@ -355,9 +369,12 @@ code {
 	// About
 
 	&--about {
-		color: #ccc;
-		background: $bg-color;
-		border-top: 3px solid $bg-color;
+		padding-bottom: 0;
+		background: #fff;
+
+		h1 {
+			color: #5b5c65;
+		}
 	}
 
 	// Work
@@ -394,6 +411,7 @@ code {
 // Row
 
 .row {
+	clear: both;
 	margin: 0 -2%;
 
 	& + & {
@@ -439,40 +457,49 @@ code {
 
 
 
-// Latest posts
+//
+// Page: home
+// ----------------------------------------------------------------------------
+
+
+// Skill cards
 // ----------------------------------------------
 
-.latest-posts {
-	padding: 0;
-	list-style: none;
+.skills {
+	padding: 4em 0;
+	margin-top: 3.5em;
+	background: #f1f2f4;
 
-	a {
-		display: inline-block;
-		padding: .5em 1em;
-		margin-bottom: 1em;
-		text-decoration: none;
-		border-radius: 2px;
-		box-shadow: 4px 4px 0 rgba(255,255,255,.05);
-	}
+	&__title {
+		position: relative;
+		padding-bottom: 1em;
+		color: #5b5c65;
 
-	time {
-		display: inline-block;
-		padding-right: .8em;
-		margin-right: .6em;
-		font-size: .888888889em;
-		font-feature-settings: "tnum";
-		opacity: .5;
-		border-right: 1px solid rgba(0,0,0,.2);
-
-		@include respond-to(large) {
-			display: block;
-			padding: 0;
-			margin: 0;
-			border: none;
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 80px;
+			border-bottom: 3px solid;
+			border-color: inherit;
+			opacity: .25;
+			content: "";
 		}
 	}
+
+	// &__caption {
+	// }
 }
 
+// Get in touch
+// ----------------------------------------------
+
+.get-in-touch {
+	padding: 3em 0;
+	text-align: center;
+	color: #806540;
+	background: #ffed75;
+}
 
 
 //
@@ -482,6 +509,7 @@ code {
 .jobs {
 	width: 100%;
 	padding: .390625%;
+	margin-top: -.781250%;
 	text-align: center;
 
 	// Row
@@ -499,9 +527,11 @@ code {
 		width: 50%;
 		padding: .390625%;
 		text-decoration: none;
+		border-radius: 2px;
 
 		figure {
 			overflow: hidden;
+			border-radius: 2px;
 		}
 
 		figcaption {
@@ -545,6 +575,7 @@ code {
 		img {
 			display: block;
 			width: 100%;
+			border-radius: 2px;
 			transition: all .6s;
 		}
 
@@ -860,7 +891,6 @@ code {
 	padding: 2em 2.5em;
 	background: #101013;
 	background: rgba(0,0,0,.5);
-	border-radius: 2px;
 
 	@include respond-to(large) {
 		padding: 1.5em 2em;

@@ -1,53 +1,46 @@
 ---
-layout: default
-class:  about
+layout:    default
+class:     about
+container: full
 ---
 
-<div class="row clearfix">
-	<article class="col col-1-2">
-		<h1 class="headline">About me</h1>
-		<p>I'm a self-taught front-end developer and designer, passionate about everything web-related. I've been working with web development for the last 6 years. Before joining the web revolution, I'd worked as graphic designer for 4 years.</p>
-		<!-- <p><a class="btn" href="work">Profile</a></p> -->
+<section class="container clearfix">
+	<article class="row">
+		<div class="col">
+			<h1 class="headline">Introduction</h1>
+		</div>
+		<div class="col col-1-2">
+			<p>I'm a self-taught front-end developer and web designer, passionate about design and everything web-related. I've been working as a developer for the last 5 years, and I'd also worked as a graphic designer.</p>
+		</div>
+		<div class="col col-1-2">
+			<p>I design performance driven, responsive websites that work seamless across devices. For me, common sense wins against intricate ideas, and I love to take the latter and turn into clean and simple interfaces.</p>
+		</div>
 	</article>
-	<!-- <article>
-		<h2>Code Skills</h2>
-		<ul>
-			<li>Accessible HTML5 markup</li>
-			<li>CSS3 and SASS</li>
-			<li>Basic Javascript and jQuery</li>
-			<li>Version control with Git</li>
-		</ul>
-		<h2>Software Skills</h2>
-		<ul>
-			<li>Photoshop</li>
-			<li>Sketch</li>
-			<li>Sublime Text</li>
-		</ul>
-	</article> -->
-	<article class="col col-1-2">
-		<h1 class="headline">What I do</h1>
-		<p>I design performance driven, responsive websites that work seamless across devices. For me, common sense wins against intricate ideas, and I love to take the latter and turn into clean and simple interfaces.</p>
-		<p><a class="btn" href="work">Latest work</a></p>
-	</article>
-</div>
+</section>
 
-<div class="row clearfix">
-	<div class="col col-1-2">
-		<h1 class="headline">Latest articles</h1>
-		<ul class="latest-posts">
-			{% for post in site.posts limit:3 %}
-			<li>
-				<a class="post--{{ post.type }}" href="{{ site.url }}{{ post.url }}">
-					<time datetime="{{post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-					<span>{{ post.title }}</span>
-				</a>
-			</li>
-			{% endfor %}
-		</ul>
-	</div>
-	<div class="col col-1-2">
-		<h1 class="headline">Get in touch</h1>
-		<p>I'm always looking for new opportunities to challenge myself, so let me know if you need some help creating your new website.</p>
+<section class="skills">
+	<article class="container clearfix">
+		<div class="row">
+			<div class="col col-1-3">
+				<h4 class="skills__title">Communication</h4>
+				<p class="skills__caption">Experienced in convey goals, progress and issues to team, management, and clients.</p>
+			</div>
+			<div class="col col-1-3">
+				<h4 class="skills__title">Problem solving</h4>
+				<p class="skills__caption">Breaking down the problem in smaller parts, I'm able to solve problems in no time.</p>
+			</div>
+			<div class="col col-1-3">
+				<h4 class="skills__title">Passion</h4>
+				<p class="skills__caption">I'm always up-to-date on advances in the field and aware of the latest technological advances.</p>
+			</div>
+		</div>
+	</article>
+</section>
+
+<!-- <section class="get-in-touch clearfix">
+	<article class="container container--narrow">
+		<h1 class="headline headline--center">Get in touch</h1>
+		<p>I'm always looking for new opportunities and experiences, so let me know if you need some help creating your new website.</p>
 		<p><a class="btn" href="contact">Drop me a line</a></p>
-	</div>
-</div>
+	</article>
+</section> -->
