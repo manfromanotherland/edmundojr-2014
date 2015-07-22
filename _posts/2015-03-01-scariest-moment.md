@@ -2,6 +2,7 @@
 layout:     post
 type:       quote
 title:      The Scariest Moment
+titleHide:  true
 categories: [blog]
 tags:       [quotes]
 ---

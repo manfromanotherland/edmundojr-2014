@@ -5,19 +5,23 @@ class:  blog
 
 <article class="post post--{{ page.type }}">
 
+	{% if page.type == "link" %}
 	<header class="post__header">
 		<h1>
-			{% if page.type == "link" %}
 			<a href="{{ page.link }}" target="_blank">
 				{{ page.title }}
 			</a>
-			{% else %}
+		</h1>
+	</header>
+	{% elsif page.titleHide == null %}
+	<header class="post__header">
+		<h1>
 			<a href="{{ page.url }}">
 				{{ page.title }}
 			</a>
-			{% endif %}
 		</h1>
 	</header>
+	{% endif %}
 
 	{{ content }}
 
