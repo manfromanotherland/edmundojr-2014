@@ -58,11 +58,11 @@
 	padding-left: 1.5em;
 
 	@include respond-to(medium) {
-		padding-left: .75em;
+		padding-left: 1em;
 	}
 
 	@include respond-to(tiny) {
-		padding-left: .5em;
+		padding-left: 0;
 	}
 
 	a {
@@ -75,11 +75,11 @@
 		transition: opacity .25s;
 
 		@include respond-to(medium) {
-			padding: .75em;
-		}
-
-		@include respond-to(tiny) {
 			padding: .5em;
+
+			&:first-child {
+				padding-left: 0;
+			}
 
 			&:last-child {
 				padding-right: 0;
@@ -144,8 +144,32 @@
 	}
 
 	h1 {
+		position: relative;
 		margin: 0;
 		color: #ece9f2;
+		cursor: help;
+
+		&::before {
+			display: none;
+			position: absolute;
+			top: -2em;
+			left: 25%;
+			font-size: 14px;
+			line-height: 1em;
+			white-space: nowrap;
+			color: $main-color;
+			opacity: 0;
+			border-radius: 2px;
+			transform: translateY(5px);
+			transition: opacity .3s, transform .3s;
+			pointer-events: none;
+			content: attr(data-hover);
+		}
+
+		&:hover::before {
+			opacity: .25;
+			transform: translateY(0);
+		}
 	}
 
 	p {

@@ -725,6 +725,8 @@ code {
 	&--quote {
 		color: #90693d;
 		background: #e8ce4d;
+		color: #7f6443;
+		background: #ffed75;
 
 		// .post__header {
 		// 	display: none;
@@ -732,14 +734,14 @@ code {
 
 		blockquote {
 			margin: 0 0 .5em;
-			font: 1.777777778em/1.230769231em "lexia", serif;
+			font: 1.2em/1.4em "lexia", serif;
 
 			p {
 				margin: 0 0 .5em;
 			}
 
 			footer {
-				font: .5625em/1.4em "proxima-nova", "Proxima Nova", sans-serif;
+				font: .8em/1.4em "proxima-nova", "Proxima Nova", sans-serif;
 			}
 		}
 	}
