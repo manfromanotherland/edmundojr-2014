@@ -165,6 +165,8 @@
 // ----------------------------------------------
 
 .device {
+	$outline: rgba(255,255,255,.1);
+	$easing: cubic-bezier(1,.015,.295,1.225);
 	position: relative;
 	overflow: hidden;
 	width: 100%;
@@ -172,9 +174,9 @@
 	margin: 0 auto;
 	border: 2px solid #ebcb63;
 	border-radius: 6px;
-	box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 rgba(255,255,255,.1);
+	box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
 	backface-visibility: hidden;
-	animation: morphDevice 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
+	animation: morphDevice 10s infinite $easing forwards;
 
 	@include respond-to(large) {
 		margin-top: 40%;
@@ -190,10 +192,10 @@
 		left: 15px;
 		width: 10px;
 		height: 10px;
-		background: rgba(255,255,255,.1);
-		box-shadow: 15px 0 0 rgba(255,255,255,.1), 30px 0 0 rgba(255,255,255,.1);
+		background: $outline;
+		box-shadow: 15px 0 0 $outline, 30px 0 0 $outline;
 		border-radius: 50%;
-		animation: morphButtons 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
+		animation: morphButtons 10s infinite $easing forwards;
 		backface-visibility: hidden;
 	}
 }
@@ -203,6 +205,7 @@
 	0%, 15% {
 		width: 100%;
 		padding-top: 70%;
+		margin-top: 0;
 		border-color: #ebcb63;
 		box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
 		transform: rotate(0);
@@ -210,27 +213,31 @@
 	25%, 40% {
 		width: 70%;
 		padding-top: 55%;
+		margin-top: 7.5%;
 		border-color: #4b8ac4;
-		box-shadow: 10px -10px 0 -2px $bg-color, 10px -10px 0 $outline;
-		transform: rotate(90deg) translateX(30px);
+		box-shadow: 9px -9px 0 -2px $bg-color, 9px -9px 0 $outline;
+		transform: rotate(90deg);
 	}
 	50%, 65% {
-		width: 25%;
-		padding-top: 40%;
+		width: 28%;
+		padding-top: 42%;
+		margin-top: 15%;
 		border-color: #ece9f2;
 		box-shadow: -8px -8px 0 -2px $bg-color, -8px -8px 0 $outline;
-		transform: rotate(180deg) translateY(-40px);
+		transform: rotate(180deg);
 	}
 	75%, 90% {
 		width: 55%;
 		padding-top: 70%;
+		margin-top: 0;
 		border-color: #57c39f;
-		box-shadow: -10px 10px 0 -2px $bg-color, -10px 10px 0 $outline;
-		transform: rotate(270deg) translateX(0);
+		box-shadow: -9px 9px 0 -2px $bg-color, -9px 9px 0 $outline;
+		transform: rotate(270deg);
 	}
 	100% {
 		width: 100%;
 		padding-top: 70%;
+		margin-top: 0;
 		border-color: #ebcb63;
 		box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
 		transform: rotate(360deg);
@@ -238,42 +245,36 @@
 }
 
 @keyframes morphButtons {
-	$outline: rgba(255,255,255,.1);
 	0%, 15%, 100% {
-		top: 15px;
-		left: 15px;
-		margin-left: -5px;
+		top: 12px;
+		left: 12px;
+		margin: 0;
 		background: #ebcb63;
-		box-shadow: 15px 0 0 $outline, 30px 0 0 $outline;
+		box-shadow: 15px 0 0 rgba(255,255,255,.1), 30px 0 0 rgba(255,255,255,.1);
+		transform: scale(1);
 	}
 	25%, 40% {
 		top: 50%;
 		left: 100%;
-		width: 10px;
-		height: 10px;
-		margin-top: -5px;
-		margin-left: -25px;
+		margin: -5px 0 0 -20px;
 		background: #4b8ac4;
-		box-shadow: 0 0 0 200px rgba(255,255,255,0.05), 0 0 0 100px transparent;
+		box-shadow: 0 0 0 250px rgba(255,255,255,0.05), 0 0 0 100px transparent;
+		transform: scale(.9);
 	}
 	50%, 65% {
 		top: 10px;
 		left: 50%;
-		width: 8px;
-		height: 8px;
-		margin-top: 0;
-		margin-left: -4px;
+		margin: 0 0 0 -5px;
 		background: #ece9f2;
-		box-shadow: 0 0 0 50px transparent, 0 0 0 rgba(255,255,255,0.05);
+		box-shadow: 0 -30px 0 rgba(255,255,255,.05), 0 -30px 0 rgba(255,255,255,.05);
+		transform: scale(.8);
 	}
 	75%, 90% {
 		top: 100%;
 		left: 50%;
-		width: 10px;
-		height: 10px;
-		margin-top: -25px;
-		margin-left: -5px;
+		margin: -20px 0 0 -5px;
 		background: #57c39f;
-		box-shadow: 0 0 0 200px rgba(255,255,255,0.05), 0 0 0 100px transparent;
+		box-shadow: 0 0 0 250px rgba(255,255,255,0.05), 0 0 0 100px transparent;
+		transform: scale(.9);
 	}
 }

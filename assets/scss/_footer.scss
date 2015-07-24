@@ -23,7 +23,8 @@
 		opacity: .5;
 		transition: opacity .25s;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			opacity: 1;
 		}
 	}
