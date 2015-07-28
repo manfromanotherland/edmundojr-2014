@@ -35,6 +35,21 @@
 		pointer-events: none;
 	}
 
+	// Hover about link
+	&:hover + .nav a:first-child {
+		opacity: .75;
+
+		span {
+			color: transparent;
+			transform: translate3d(0,-50%,0);
+
+			&::before {
+				color: #e3e4e8;
+				opacity: 1;
+			}
+		}
+	}
+
 	@include respond-to(medium) {
 		max-width: 60px;
 	}
@@ -150,7 +165,7 @@
 		cursor: help;
 
 		&::before {
-			display: none;
+			// display: none;
 			position: absolute;
 			top: -2em;
 			left: 25%;
