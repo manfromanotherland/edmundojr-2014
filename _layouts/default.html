@@ -6,17 +6,29 @@
 			{% if page.class == "about" %}
 				<h1 data-hover="— Sympathy For The Devil by The Rolling Stones">Please allow me<br> to introduce myself.</h1>
 				<p>I'm Edmundo, front-end developer and web designer living in lovely Dublin, Ireland.</p>
-				{% elsif page.class == "work" %}
+			{% elsif page.class == "work" %}
 				<h1 data-hover="— Bron-Y-Aur Stomp by Led Zeppelin">Like a leaf is to<br> a tree, so fine.</h1>
 				<p>Websites designed with purpose and meaning, resulting in enjoyable digital experiences.</p>
-				{% else page.class == "contact" %}
+			{% else page.class == "contact" %}
 				<h1 data-hover="— Say It To Me Now by Glen Hansard">If you have something to say, say it to me now.</h1>
 				<p>I'm always looking for new opportunities to challenge myself.</p>
 			{% endif %}
 			</div>
 			{% if page.class == "about" %}
 			<div class="col col-1-3">
-				<figure class="device"><figcaption class="ir">Responsive Web Design</figcaption></figure>
+				<figure class="icon-device">
+					<figcaption class="ir">Responsive Web Design</figcaption>
+				</figure>
+			</div>
+			{% elsif page.class == "work" %}
+			<div class="col col-1-3">
+				<figure class="icon-cards">
+					<div class="icon-cards__content">
+						<div class="icon-cards__item"></div>
+						<div class="icon-cards__item"></div>
+						<div class="icon-cards__item"></div>
+					</div>
+				</figure>
 			</div>
 			{% endif %}
 		</div>

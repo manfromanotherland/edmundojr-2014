@@ -35,3 +35,185 @@
 		transform: none;
 	}
 }
+
+
+//
+// Hero icon animations
+// ----------------------------------------------------------------------------
+
+
+// Morphing device animation (home page)
+// ----------------------------------------------
+
+.icon-device {
+	$outline: rgba(255,255,255,.1);
+	$easing: cubic-bezier(1,.015,.295,1.225);
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 70%;
+	margin: 0 auto;
+	border: 2px solid #ebcb63;
+	border-radius: 6px;
+	box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
+	backface-visibility: hidden;
+	animation: morphDevice 10s infinite $easing forwards;
+
+	@include respond-to(large) {
+		margin-top: 40%;
+	}
+
+	@include respond-to(medium) {
+		display: none;
+	}
+
+	figcaption {
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		width: 10px;
+		height: 10px;
+		background: $outline;
+		box-shadow: 15px 0 0 $outline, 30px 0 0 $outline;
+		border-radius: 50%;
+		animation: morphButtons 10s infinite $easing forwards;
+		backface-visibility: hidden;
+	}
+}
+
+@keyframes morphDevice {
+	$outline: rgba(255,255,255,.1);
+	0%, 15% {
+		width: 100%;
+		padding-top: 70%;
+		margin-top: 0;
+		border-color: #ebcb63;
+		box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
+		transform: rotate(0);
+	}
+	25%, 40% {
+		width: 70%;
+		padding-top: 55%;
+		margin-top: 7.5%;
+		border-color: #4b8ac4;
+		box-shadow: 9px -9px 0 -2px $bg-color, 9px -9px 0 $outline;
+		transform: rotate(90deg);
+	}
+	50%, 65% {
+		width: 28%;
+		padding-top: 42%;
+		margin-top: 15%;
+		border-color: #ece9f2;
+		box-shadow: -8px -8px 0 -2px $bg-color, -8px -8px 0 $outline;
+		transform: rotate(180deg);
+	}
+	75%, 90% {
+		width: 55%;
+		padding-top: 70%;
+		margin-top: 0;
+		border-color: #57c39f;
+		box-shadow: -9px 9px 0 -2px $bg-color, -9px 9px 0 $outline;
+		transform: rotate(270deg);
+	}
+	100% {
+		width: 100%;
+		padding-top: 70%;
+		margin-top: 0;
+		border-color: #ebcb63;
+		box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes morphButtons {
+	0%, 15%, 100% {
+		top: 12px;
+		left: 12px;
+		margin: 0;
+		background: #ebcb63;
+		box-shadow: 15px 0 0 rgba(255,255,255,.1), 30px 0 0 rgba(255,255,255,.1);
+		transform: scale(1);
+	}
+	25%, 40% {
+		top: 50%;
+		left: 100%;
+		margin: -5px 0 0 -20px;
+		background: #4b8ac4;
+		box-shadow: 0 0 0 250px rgba(255,255,255,0.05), 0 0 0 100px transparent;
+		transform: scale(.9);
+	}
+	50%, 65% {
+		top: 10px;
+		left: 50%;
+		margin: 0 0 0 -5px;
+		background: #ece9f2;
+		box-shadow: 0 -30px 0 rgba(255,255,255,.05), 0 -30px 0 rgba(255,255,255,.05);
+		transform: scale(.8);
+	}
+	75%, 90% {
+		top: 100%;
+		left: 50%;
+		margin: -20px 0 0 -5px;
+		background: #57c39f;
+		box-shadow: 0 0 0 250px rgba(255,255,255,0.05), 0 0 0 100px transparent;
+		transform: scale(.9);
+	}
+}
+
+
+// Cards Carousel (work page)
+// ----------------------------------------------
+
+.icon-cards {
+	position: relative;
+	width: 190px;
+	height: 210px;
+	margin: 2em auto;
+	perspective: 800px;
+
+	// This is the element that rotates with the animation
+
+	&__content {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		transform-style: preserve-3d;
+		transform: translateZ(-182px) rotateY(0);
+		animation: carousel 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
+	}
+
+	// Individual cards
+
+	&__item {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 190px;
+		height: 210px;
+		border-radius: 6px;
+
+		&:nth-child(1) {
+			background: rgba(252,192,77,.9);
+			transform: rotateY(0) translateZ(182px);
+		}
+
+		&:nth-child(2) {
+			background: rgba(49,192,204,.9);
+			transform: rotateY(120deg) translateZ(182px);
+		}
+
+		&:nth-child(3) {
+			background: rgba(236,233,242,.9);
+			transform: rotateY(240deg) translateZ(182px);
+		}
+	}
+}
+
+// Carousel animation
+
+@keyframes carousel {
+	0%,  17.5%  { transform: translateZ(-182px) rotateY(0); }
+	27.5%, 45%  { transform: translateZ(-182px) rotateY(-120deg); }
+	55%, 72.5%  { transform: translateZ(-182px) rotateY(-240deg); }
+	82.5%, 100% { transform: translateZ(-182px) rotateY(-360deg); }
+}
