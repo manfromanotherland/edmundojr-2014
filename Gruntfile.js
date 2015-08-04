@@ -11,7 +11,7 @@ module.exports = function (grunt) {
 		// shell commands for use in Grunt tasks
 		shell: {
 			jekyllBuild: {
-				command: 'jekyll build && rsync -vrzc --delete _site/ edmundojr:www',
+				command: 'jekyll build && rsync -vrzc _site/ edmundojr:www',
 			},
 			jekyllServe: {
 				command: 'jekyll serve',
