@@ -6,7 +6,7 @@ categories: [blog]
 tags: [quotes, tips]
 ---
 
-> It’s tempting to judge what you read:
+> “It’s tempting to judge what you read:
 >
 > _I agree with these statements, and I disagree with those._
 >
@@ -16,7 +16,7 @@ tags: [quotes, tips]
 >
 > _I have now learned that there exists a worldview in which all of these statements are consistent._
 >
-> And if it feels worthwhile, you can make a genuine effort to understand that entire worldview. You don't have to adopt it. Just make it available to yourself, so you can make connections to it when it's needed.
+> And if it feels worthwhile, you can make a genuine effort to understand that entire worldview. You don't have to adopt it. Just make it available to yourself, so you can make connections to it when it's needed.”
 >
 > <footer>— Bret Victor</footer>
 
