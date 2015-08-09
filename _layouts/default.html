@@ -9,9 +9,12 @@
 			{% elsif page.class == "about" %}
 				<h1 data-hover="— Sympathy For The Devil by The Rolling Stones">Please allow me<br> to introduce myself.</h1>
 				<p>I'm Edmundo, front-end developer and web designer living in lovely Dublin, Ireland.</p>
-			{% else page.class == "contact" %}
+			{% elsif page.class == "contact" %}
 				<h1 data-hover="— Say It To Me Now by Glen Hansard">If you have something to say, say it to me now.</h1>
 				<p>I'm always looking for new opportunities to challenge myself.</p>
+			{% else page.class == "404" %}
+				<h1>Four oh four,<br> page not found.</h1>
+				<p>You're still here? It's over. Go <a href="/">home</a>. Go!</p>
 			{% endif %}
 			</div>
 			{% if page.class == "work" %}
