@@ -427,22 +427,12 @@ AddDefaultCharset utf-8
 </FilesMatch>
 
 # ----------------------------------------------------------------------
-# | Site Referral banning                                              |
+# | Redirects old work page to root                                    |
 # ----------------------------------------------------------------------
-
-# Block spam referrers with data taken from Google Analytics.
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{HTTP_REFERER} 4webmasters.org [NC,OR]
-    RewriteCond %{HTTP_REFERER} webmonetizer.net [NC,OR]
-    RewriteCond %{HTTP_REFERER} trafficmonetizer.org [NC,OR]
-    RewriteCond %{HTTP_REFERER} success-seo.com [NC,OR]
-    RewriteCond %{HTTP_REFERER} buttons-for-website.com [NC,OR]
-    RewriteCond %{HTTP_REFERER} traffic2money.com [NC,OR]
-    RewriteCond %{HTTP_REFERER} videos-for-your-business.com [NC,OR]
-    RewriteCond %{HTTP_REFERER} seoanalyses.com [NC]
-    RewriteRule .* - [F]
+    Redirect 301 /work /
 </IfModule>
 
 # ----------------------------------------------------------------------
