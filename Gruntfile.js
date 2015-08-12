@@ -12,7 +12,7 @@ module.exports = function (grunt) {
 		shell: {
 			jekyllBuild: {
 				// command: 'jekyll build && rsync -vrzc --delete _site/ edmundojr:www',
-				command: 'jekyll build && rsync -vrzc --delete --exclude=wildside _site/ edmundojr:www',
+				command: 'jekyll build && rsync -vrzc --delete --exclude=wildside --exclude=bf --exclude=st _site/ edmundojr:www',
 			},
 			jekyllServe: {
 				command: 'jekyll serve',
