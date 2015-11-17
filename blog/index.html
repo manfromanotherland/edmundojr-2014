@@ -1,23 +1,28 @@
 ---
 layout: blog
+class:  blog
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts limit: 5 %}
 <article class="post post--{{ post.type }}">
 
+	{% if post.type == "link" %}
 	<header class="post__header">
 		<h1>
-			{% if post.type == "link" %}
 			<a href="{{ post.link }}" target="_blank">
 				{{ post.title }}
 			</a>
-			{% else %}
+		</h1>
+	</header>
+	{% elsif post.titleHide == null %}
+	<header class="post__header">
+		<h1>
 			<a href="{{ post.url }}">
 				{{ post.title }}
 			</a>
-			{% endif %}
 		</h1>
 	</header>
+	{% endif %}
 
 	{{ post.content }}
 
@@ -32,7 +37,7 @@ layout: blog
 			<li class="share">
 				<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M20 10l-7-7v4c-7 1-10 6-11 11 2.5-3.5 6-5.1 11-5.1v4.1l7-7z"/></svg>
 				<div>
-					<a class="share--twitter" href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ site.url }}{{ post.url }}&via={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+					<a class="share--twitter" href="https://twitter.com/intent/tweet?text={{ post.title }}&amp;url={{ site.url }}{{ post.url }}&amp;via={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
 					<a class="share--facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
 					<a class="share--google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
 				</div>
@@ -47,3 +52,17 @@ layout: blog
 
 </article>
 {% endfor %}
+
+<footer class="pagination">
+	{% if paginator.previous_page %}
+	<a class="pagination__prev" href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">‹ Previous</a>
+	{% else %}
+	<span class="pagination__prev">‹ Previous</span>
+	{% endif %}
+	<!-- <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span> -->
+	{% if paginator.next_page %}
+	<a href="{{ paginator.next_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__next">Next ›</a>
+	{% else %}
+	<span class="pagination__next">Next ›</span>
+	{% endif %}
+</footer>

@@ -1,0 +1,60 @@
+//
+// Settings
+// ----------------------------------------------------------------------------
+
+// Colors
+
+$main-color : #737580;
+$bg-color   : #202126;
+
+// Breakpoints
+
+$huge   : 1200px;
+$large  : 1000px;
+$medium : 800px;
+$small  : 600px;
+$tiny   : 400px;
+
+
+
+//
+// Mixins
+// ----------------------------------------------------------------------------
+
+// Manage responsive breakpoints
+// ----------------------------------------------
+// .element {
+//     @include respond-to(huge)   { // styles }
+//     @include respond-to(big)    { // styles }
+//     @include respond-to(medium) { // styles }
+//     @include respond-to(small)  { // styles }
+//     @include respond-to(tiny)   { // styles }
+// }
+
+@mixin respond-to($media) {
+	@if $media == huge {
+		@media (min-width: $huge) {
+			@content;
+		}
+	}
+	@else if $media == large {
+		@media (max-width: $large) {
+			@content;
+		}
+	}
+	@else if $media == medium {
+		@media (max-width: $medium) {
+			@content;
+		}
+	}
+	@else if $media == small {
+		@media (max-width: $small) {
+			@content;
+		}
+	}
+	@else if $media == tiny {
+		@media (max-width: $tiny) {
+			@content;
+		}
+	}
+}

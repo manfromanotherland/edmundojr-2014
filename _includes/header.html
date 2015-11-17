@@ -17,53 +17,39 @@
 
 	<meta name="author" content="{{ site.author.name }}">
 
-	<link rel="stylesheet" href="{{ "assets/css/normalize.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ "assets/css/main.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ site.baseurl }}assets/css/main.css">
 
 	<link rel="canonical" href="{{ page.url | replace:'/index.html','' | prepend: site.url }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.baseurl }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}feed.xml">
 
 	<script src="//use.typekit.net/zco3qqa.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 
 </head>
-<body class="{% body_class %}">
+<body class="is-{{ page.class }}">
 
-	<header class="header" role="banner">
+	<header class="header container" role="banner">
 
-		<nav class="nav container" role="navigation">
-			<h1 class="logo ir">
-				<a href="/">
-					<img src="{{ "assets/img/logo.svg" | prepend: site.baseurl }}" alt="{{ site.title }}" width="70" height="79">
-					{{ site.title }}
-				</a>
-			</h1>
-			<ul>
-				<!-- <li><a {% if page.layout == "default" %}class="is-active"{% endif %} href="/">About</a></li> -->
-				<!-- <li><a {% if page.layout == "work" %}class="is-active"{% endif %} href="/work">Work</a></li> -->
-				<li><a {% if page.layout == "blog" %}class="is-active"{% endif %} href="/blog">Blog</a></li>
-				<li><a {% if page.layout == "contact" %}class="is-active"{% endif %} href="/contact">Contact</a></li>
-			</ul>
+		<h1 class="logo ir">
+			<a href="/">
+				<img src="{{ site.baseurl }}assets/img/logo.svg" alt="{{ site.title }}" width="70" height="79">
+				{{ site.title }}
+			</a>
+		</h1>
+
+		<nav class="nav" role="navigation">
+			<a {% if page.class == "work" %}class="is-active"{% endif %} href="/">
+				<span data-hover="Work">Work</span>
+			</a>
+			<a {% if page.class == "about" %}class="is-active"{% endif %} href="/about">
+				<span data-hover="About">About</span>
+			</a>
+			<a {% if page.class == "blog" %}class="is-active"{% endif %} href="/blog">
+				<span data-hover="Blog">Blog</span>
+			</a>
+			<a {% if page.class == "contact" %}class="is-active"{% endif %} href="/contact">
+				<span data-hover="Contact">Contact</span>
+			</a>
 		</nav>
-
-		<div class="intro container clearfix">
-			<div class="row">
-				<div class="col col-2-3">
-					{% if page.layout == "default" %}
-						<h1 lang="ga">Céad míle fáilte! <span title="“Céad míle fáilte” is a commom greeting in Irish. Literally it means “a hundred thousand welcomes”, and I think that's beautiful.">*</span></h1>
-						<p>I'm Edmundo Junior, a front-end developer and designer located in lovely Dublin, Ireland.</p>
-					{% elsif page.layout == "work" %}
-						<h1>Lorem ipsum dolor sit amet.</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quod.</p>
-					{% elsif page.layout == "blog" %}
-						<h1>Web design and development blog.</h1>
-						<p>Mostly design and code, but may also contain traces of random nerdy stuff.</p>
-					{% else page.layout == "contact" %}
-						<h1>Let's get down to business.</h1>
-						<p>I'm always looking for new opportunities to challenge myself, have you got one?</p>
-					{% endif %}
-				</div>
-			</div>
-		</div>
 
 	</header>

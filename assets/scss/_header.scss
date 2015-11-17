@@ -1,0 +1,204 @@
+//
+// Header
+// ----------------------------------------------------------------------------
+
+.header {
+	position: relative;
+	padding: 2.5em 0;
+	border-bottom: 3px solid rgba(255,255,255,.04);
+
+	@include respond-to(large) {
+		padding: 2em 0;
+	}
+
+	@include respond-to(medium) {
+		padding: 1.5em 0;
+	}
+
+	@include respond-to(tiny) {
+		padding: 1em 0;
+		text-align: center;
+	}
+}
+
+
+// Logo
+// ----------------------------------------------
+
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	user-select: none;
+
+	.is-about & {
+		pointer-events: none;
+	}
+
+	// Hover about link
+	&:hover + .nav a:first-child {
+		opacity: .75;
+
+		span {
+			color: transparent;
+			transform: translate3d(0,-50%,0);
+
+			&::before {
+				color: #e3e4e8;
+				opacity: 1;
+			}
+		}
+	}
+
+	@include respond-to(medium) {
+		max-width: 60px;
+	}
+
+	@include respond-to(tiny) {
+		display: block;
+		max-width: 40px;
+		margin: 0 auto 10px;
+	}
+}
+
+
+// Navigation
+// ----------------------------------------------
+
+.nav {
+	display: inline-block;
+	font-size: .888888889em;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-left: 1.5em;
+
+	@include respond-to(medium) {
+		padding-left: 1em;
+	}
+
+	@include respond-to(tiny) {
+		padding-left: 0;
+	}
+
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 1em;
+		text-decoration: none;
+		color: #e3e4e8;
+		opacity: .5;
+		transition: opacity .25s;
+
+		@include respond-to(medium) {
+			padding: .5em;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+
+		span {
+			position: relative;
+			display: inline-block;
+			transition: all .3s;
+
+			&::before {
+				position: absolute;
+				top: 50%;
+				opacity: 0;
+				content: attr(data-hover);
+				transition: all .3s;
+			}
+		}
+	}
+
+	a:hover,
+	a:focus {
+		opacity: .75;
+
+		span {
+			color: transparent;
+			transform: translate3d(0,-50%,0);
+
+			&::before {
+				color: #e3e4e8;
+				opacity: 1;
+			}
+		}
+	}
+
+	.is-active {
+		opacity: 1;
+		pointer-events: none;
+	}
+}
+
+
+
+//
+// Intro
+// ----------------------------------------------------------------------------
+
+.intro {
+	padding: 5em 0;
+
+	@include respond-to(large) {
+		padding: 4em 0;
+	}
+
+	@include respond-to(medium) {
+		padding: 3em 0;
+	}
+
+	@include respond-to(tiny) {
+		padding: 2em 0;
+	}
+
+	h1 {
+		position: relative;
+		margin: 0;
+		color: #ece9f2;
+		cursor: help;
+
+		&::before {
+			// display: none;
+			position: absolute;
+			top: -2em;
+			left: 25%;
+			font-size: 14px;
+			line-height: 1em;
+			white-space: nowrap;
+			color: $main-color;
+			opacity: 0;
+			border-radius: 2px;
+			transform: translateY(5px);
+			transition: opacity .3s, transform .3s;
+			pointer-events: none;
+			content: attr(data-hover);
+		}
+
+		&:hover::before {
+			opacity: .25;
+			transform: translateY(0);
+		}
+	}
+
+	p {
+		margin: .8em 0 0;
+		font-size: 1.555555556em;
+		line-height: 1.266666667em;
+
+		@include respond-to(tiny) {
+			font-size: 1.428571429em;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: #ece9f2;
+	}
+}

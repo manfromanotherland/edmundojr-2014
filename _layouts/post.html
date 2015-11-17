@@ -1,22 +1,27 @@
 ---
 layout: blog
+class:  blog
 ---
 
 <article class="post post--{{ page.type }}">
 
+	{% if page.type == "link" %}
 	<header class="post__header">
 		<h1>
-			{% if page.type == "link" %}
 			<a href="{{ page.link }}" target="_blank">
 				{{ page.title }}
 			</a>
-			{% else %}
+		</h1>
+	</header>
+	{% elsif page.titleHide == null %}
+	<header class="post__header">
+		<h1>
 			<a href="{{ page.url }}">
 				{{ page.title }}
 			</a>
-			{% endif %}
 		</h1>
 	</header>
+	{% endif %}
 
 	{{ content }}
 
@@ -24,14 +29,14 @@ layout: blog
 		<ul class="post__meta--info">
 			<li><a href="{{ site.url }}{{ page.url }}"><time datetime="{{page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_long_string }}</time></a></li>
 			{% for tag in page.tags %}
-			<li><a href="{{ tag_dir }}tag/{{ tag }}">#{{ tag }}</a></li>
+			<li><a href="/blog/{{ tag_dir }}tag/{{ tag }}">#{{ tag }}</a></li>
 			{% endfor %}
 		</ul>
 		<ul class="post__meta--actions">
 			<li class="share">
 				<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M20 10l-7-7v4c-7 1-10 6-11 11 2.5-3.5 6-5.1 11-5.1v4.1l7-7z"/></svg>
 				<div>
-					<a class="share--twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+					<a class="share--twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
 					<a class="share--facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
 					<a class="share--google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
 				</div>

@@ -1,0 +1,1083 @@
+//
+// Imports
+// ----------------------------------------------------------------------------
+
+@import "normalize";
+@import "settings";
+@import "header";
+@import "footer";
+@import "animations";
+
+
+
+//
+// Defaults
+// ----------------------------------------------------------------------------
+
+html {
+	font-size: 1.125em;
+	line-height: 1.555555556;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+// Remove the gap between elements
+// and the bottom of their containers
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+// Responsive images
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+// Remove default fieldset styles
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+// Remove default figure margin
+
+figure {
+	margin: 0;
+}
+
+// Allow only vertical resizing of textareas
+
+textarea {
+	resize: vertical;
+}
+
+// Remove default iOS styles
+
+input,
+textarea {
+	border-radius: 2px;
+	appearance: none;
+}
+
+// Links default
+
+a {
+	color: inherit;
+}
+
+
+
+//
+// Helper classes
+// ----------------------------------------------------------------------------
+
+// Clearfix
+
+.clearfix {
+
+	&::before,
+	&::after {
+		content: "";
+		display: table;
+	}
+
+	&::after {
+		clear: both;
+	}
+}
+
+// Image replacement
+
+.ir {
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
+// Hide elements
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+
+// Responsive video
+// ----------------------------------------------
+
+.video-container {
+	position: relative;
+	height: 0;
+	padding-bottom: 64%;
+	margin: 2em -2.5em;
+
+	@include respond-to(large) {
+		margin: 1.5em -2em;
+	}
+
+	@include respond-to(medium) {
+		margin: 1.5em -1.5em;
+	}
+
+	@include respond-to(tiny) {
+		margin: 1em -1em;
+	}
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+
+//
+// Typography
+// ----------------------------------------------------------------------------
+
+body {
+	font-family: "Proxima Nova", "proxima-nova", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: $main-color;
+	background-color: $bg-color;
+
+	@include respond-to(medium) {
+		font-size: .875em;
+	}
+
+	@include respond-to(large) {
+		font-size: 1em;
+	}
+}
+
+// Headlines
+
+.headline {
+	position: relative;
+	padding-bottom: .4em;
+
+	&::before {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 80px;
+		border-bottom: 3px solid;
+		border-color: inherit;
+		opacity: .25;
+		content: "";
+	}
+
+	&--center {
+		text-align: center;
+
+		&::before {
+			position: absolute;
+			left: 50%;
+			margin-left: -40px;
+		}
+	}
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: bold;
+	line-height: 1.1em;
+	margin-bottom: .5em;
+}
+
+h1 {
+	font-size: 3em;
+
+	@include respond-to(medium) {
+		font-size: 2.3em;
+	}
+}
+
+h2 {
+	font-size: 2.4em;
+
+	@include respond-to(medium) {
+		font-size: 2em;
+	}
+}
+
+h3 {
+	font-size: 2em;
+
+	@include respond-to(medium) {
+		font-size: 1.5em;
+	}
+}
+
+h4 {
+	font-size: 1.333333333em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h1:first-child,
+h2:first-child {
+	margin-top: .15em;
+}
+
+h4:first-child {
+	margin-top: .5em;
+}
+
+// Horizontal rule
+
+hr {
+	display: block;
+	width: 100%;
+	height: 4px;
+	padding: 0;
+	margin: 2em auto;
+	background: rgba(0,0,0,.2);
+	border: none;
+}
+
+q {
+	font-style: italic;
+}
+
+
+// Buttons
+// ----------------------------------------------
+
+.btn {
+	position: relative;
+	display: inline-block;
+	padding: .4em .8em;
+	font-size: .888888889em;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid rgba(000,000,000,.2);
+	border-radius: 2px;
+	box-shadow: 4px 4px 0 rgba(000,000,000,.05);
+	transition: background .25s, box-shadow .25s;
+
+	&:hover,
+	&:focus {
+		background: rgba(0,0,0,.05);
+		box-shadow: 0 0 0 transparent;
+	}
+}
+
+// Small
+
+small {
+	font-size: .888888889em;
+}
+
+// Custom ampersand
+
+.amp {
+	font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+// Code
+
+pre {
+	padding: .75em 1em;
+	background: rgba(255,255,255,.5);
+	border-radius: 2px;
+}
+
+code {
+	font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
+	font-size: .888888889em;
+}
+
+
+// Sidebar lists
+// ----------------------------------------------
+
+.link-list {
+	padding: 0;
+	margin-top: 0;
+	list-style: none;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+		transition: opacity .25s;
+
+		&:hover,
+		&:focus {
+			opacity: .5;
+		}
+	}
+}
+
+// Let you know
+
+.let-you-know {
+	padding: 3em 0;
+	text-align: center;
+	opacity: .75;
+}
+
+
+
+//
+// Layout
+// ----------------------------------------------------------------------------
+
+.container {
+	position: relative;
+	width: 90%;
+	max-width: 52.222222222em;
+	margin: 0 auto;
+
+	&--narrow {
+		max-width: 45.222222222em;
+	}
+
+	&--wide {
+		max-width: 57.222222222em;
+	}
+
+	&--full {
+		width: 100%;
+		max-width: none;
+	}
+}
+
+
+// Main area
+// ----------------------------------------------
+
+.main {
+	position: relative;
+	padding: 4em 0;
+
+	@include respond-to(medium) {
+		padding: 2.5em 0;
+	}
+
+	// About
+
+	&--about {
+		padding-bottom: 0;
+		background: #fff;
+
+		h1 {
+			color: #5b5c65;
+		}
+	}
+
+	// Work
+
+	&--work {
+		padding: 0;
+	}
+
+	// Contact
+
+	&--contact {
+		color: #806540;
+		background: #ffed75;
+	}
+}
+
+
+// Sidebar
+// ----------------------------------------------
+
+.sidebar {
+	padding: 2em 2.5em;
+	border-radius: 2px;
+
+	@include respond-to(large) {
+		padding: 1.5em 2em;
+	}
+
+	@include respond-to(medium) {
+		padding: 1.5em;
+	}
+
+	@include respond-to(tiny) {
+		padding: 1em;
+	}
+}
+
+
+// Grid system
+// ----------------------------------------------
+
+// Row
+
+.row {
+	clear: both;
+	margin: 0 -2%;
+
+	& + & {
+		margin-top: 4%;
+	}
+}
+
+// Columns
+
+.col {
+	float: left;
+	width: 96%;
+	margin: 0 2%;
+
+	&-1-2 {
+		width: 46%;
+	}
+
+	&-1-3 {
+		width: 29.333333333%;
+	}
+
+	&-2-3 {
+		width: 62.666666666%;
+	}
+
+	&-1-4 {
+		width: 21%;
+
+		@include respond-to(large) {
+			width: 46%;
+		}
+	}
+
+	@include respond-to(medium) {
+		&-1-2,
+		&-1-3,
+		&-2-3 {
+			width: 96%;
+		}
+	}
+}
+
+
+
+//
+// Page: home
+// ----------------------------------------------------------------------------
+
+
+// Skill cards
+// ----------------------------------------------
+
+.skills {
+	padding: 4em 0;
+	margin-top: 4em;
+	background: #f1f2f4;
+
+	&__title {
+		position: relative;
+		padding-bottom: 1em;
+		color: #5b5c65;
+
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 80px;
+			border-bottom: 3px solid;
+			border-color: inherit;
+			opacity: .25;
+			content: "";
+		}
+	}
+
+	// &__caption {
+	// }
+}
+
+// Get in touch
+// ----------------------------------------------
+
+.get-in-touch {
+	padding: 3em 0;
+	text-align: center;
+	color: #806540;
+	background: #ffed75;
+}
+
+
+//
+// Page: work
+// ----------------------------------------------------------------------------
+
+.jobs {
+	width: 100%;
+	padding: .390625%;
+	margin-top: -.781250%;
+	text-align: center;
+
+	@include respond-to(medium) {
+		width: 90%;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	// Row
+
+	&__row {
+		clear: both;
+	}
+
+	// Links
+
+	&__item {
+		float: left;
+		position: relative;
+		overflow: hidden;
+		width: 50%;
+		padding: .390625%;
+		text-decoration: none;
+		border-radius: 2px;
+
+		@include respond-to(medium) {
+			width: 100%;
+			padding: 0 0 6.4%;
+		}
+
+		figure {
+			overflow: hidden;
+			border-radius: 2px;
+		}
+
+		figcaption {
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			transform: translate3d(0,-50%,0);
+		}
+
+		// Title
+
+		h1 {
+			margin: 0;
+			transition: all .4s;
+		}
+
+		// Role
+
+		h4 {
+			margin: 0;
+			font-size: .875em;
+			text-transform: uppercase;
+			opacity: .5;
+			transition: all .4s;
+		}
+
+		// Description
+
+		p {
+			position: absolute;
+			top: 50%;
+			width: 80%;
+			margin: 0 10%;
+			opacity: 0;
+			transform: translate3d(0,-50%,0) scale(.9);
+			transition: all .4s;
+
+			@include respond-to(medium) {
+				font-size: .8em;
+			}
+		}
+
+		// Image
+
+		img {
+			display: block;
+			width: 100%;
+			border-radius: 2px;
+			transition: all .6s;
+		}
+
+		// Super cool hover effect
+
+		&:hover,
+		&:focus {
+
+			h1 {
+				opacity: 0;
+				transform: translate3d(0,-25%,0) scale(1.1);
+			}
+
+			h4 {
+				opacity: 0;
+				transform: translate3d(0,50%,0) scale(1.1);
+			}
+
+			p {
+				opacity: 1;
+				transform: translate3d(0,-50%,0) scale(1);
+			}
+
+			img {
+				transform: scale(1.1);
+			}
+		}
+
+		// Job individual colours
+
+		&--wildside figure {
+			color: #734020;
+			background: #fcc04d;
+		}
+
+		&--mexx figure {
+			color: #f9e9bf;
+			background: #d4501d;
+		}
+
+		&--g3fantoni figure {
+			color: #346ae0;
+			background: #02153e;
+		}
+
+		&--davila figure {
+			color: #4f5960;
+			background: #5cc7d1;
+		}
+
+		&--localhost figure {
+			color: #737580;
+			background: #fff;
+		}
+	}
+}
+
+
+
+//
+// Page: blog
+// ----------------------------------------------------------------------------
+
+.main--blog {
+	padding: 0;
+
+	.sidebar {
+		color: #806540;
+		background: #ffed75;
+	}
+}
+
+
+// Posts
+// ----------------------------------------------
+
+.post {
+	padding: 2em 2.5em;
+	margin-bottom: 6.4%;
+	border-radius: 2px;
+
+	@include respond-to(large) {
+		padding: 1.5em 2em;
+	}
+
+	@include respond-to(medium) {
+		padding: 1.5em;
+	}
+
+	@include respond-to(tiny) {
+		padding: 1em;
+	}
+
+	// Post title
+
+	&__header a {
+		text-decoration: none;
+	}
+
+	// Text
+
+	&--text {
+		color: $main-color;
+		background: #e3e4e8;
+
+		.post__header a {
+			color: #5b5c65;
+		}
+	}
+
+	// Quote
+
+	&--quote {
+		color: #90693d;
+		background: #e8ce4d;
+		color: #7f6443;
+		background: #ffed75;
+
+		// .post__header {
+		// 	display: none;
+		// }
+
+		blockquote {
+			margin: 0 0 .5em;
+			font: 1.2em/1.4em "lexia", serif;
+
+			p {
+				margin: 0 0 .5em;
+			}
+
+			footer {
+				font: .8em/1.4em "proxima-nova", "Proxima Nova", sans-serif;
+			}
+		}
+	}
+
+	// Photo
+
+	&--photo {
+		color: #ccc;
+		background: #808080;
+
+		.photo div {
+			margin: -2em -2.5em 2em;
+		}
+
+		img {
+			width: 100%;
+			border-radius: 4px 4px 0 0;
+		}
+	}
+
+	// Link
+
+	&--link {
+		color: #d3cce6;
+		background: #684a9c;
+	}
+
+	// Video
+
+	&--video {
+		color: #ffd9de;
+		background: #d8334a;
+	}
+
+	// Post Images
+
+	.pic {
+		display: block;
+		margin: 2em -2.5em;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+
+// Tags page
+// ----------------------------------------------
+
+.post--tags {
+	background: #fff;
+}
+
+.post-list {
+	padding: 0;
+	list-style: none;
+
+	li + li {
+		border-top: 1px solid #ddd;
+	}
+
+	a {
+		display: block;
+		line-height: 2.25em;
+		text-decoration: none;
+	}
+
+	time {
+		display: inline-block;
+		padding-right: .8em;
+		margin-right: .6em;
+		font-size: .888888889em;
+		font-feature-settings: tnum;
+		border-right: 1px solid #ddd;
+	}
+}
+
+
+// Post meta
+// ----------------------------------------------
+
+.post__meta {
+	padding-top: 1em;
+	font-size: .888888889em;
+
+	ul {
+		display: inline;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	li {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: .5em;
+	}
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		transition: color .25s;
+	}
+
+	svg {
+		width: 22px;
+		height: 22px;
+		fill: currentColor;
+	}
+
+	// Date
+
+	&--info li:first-child {
+		margin: 0;
+
+		@include respond-to(medium) {
+			display: block;
+
+			& + li {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+
+// Share
+// ----------------------------------------------
+
+.post__meta--actions {
+	float: right;
+}
+
+.share {
+	cursor: pointer;
+
+	// Tooltip
+
+	div {
+		position: absolute;
+		top: 100%;
+		left: -39px;
+		width: 100px;
+		margin-top: 8px;
+		font-size: .888888889em;
+		background: #fff;
+		border-radius: 2px;
+		box-shadow: 0 1px 5px rgba(0,0,0,.1);
+		visibility: hidden;
+		opacity: 0;
+		transform-origin: top center;
+		transform: scale(1.1);
+		transition: all .25s;
+
+		// Arrow head
+
+		&::before {
+			position: absolute;
+			top: -8px;
+			left: 50%;
+			margin-left: -8px;
+			border-bottom: 8px solid #fff;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			content: "";
+		}
+	}
+
+	&:hover div {
+		visibility: visible;
+		opacity: 1;
+		transform: none;
+	}
+
+	a {
+		display: block;
+		padding: .4em 1em;
+		font-weight: 600;
+		text-decoration: none;
+
+		&:hover       { background: #eee; }
+		&:first-child { border-radius: 4px 4px 0 0; }
+		&:last-child  { border-radius: 0 0 4px 4px; }
+		& + a         { border-top: 1px solid #ddd; }
+	}
+}
+
+.share--twitter     { color: #55acee; }
+.share--facebook    { color: #3c5c95; }
+.share--google-plus { color: #d94a3a; }
+
+
+// Post Comments / Disqus
+// ----------------------------------------------
+
+.comments {
+	min-height: 300px;
+	padding: 2em 2.5em;
+	background: #101013;
+	background: rgba(0,0,0,.5);
+
+	@include respond-to(large) {
+		padding: 1.5em 2em;
+	}
+}
+
+
+// Blog pagination
+// ----------------------------------------------
+
+.pagination {
+	overflow: hidden;
+	padding: 1em 2.5em;
+	margin-bottom: 6.4%;
+	font-weight: 600;
+	text-transform: uppercase;
+	background: #fff;
+	border-radius: 2px;
+
+	@include respond-to(large) {
+		padding: 1em 2em;
+	}
+
+	@include respond-to(medium) {
+		padding: 1em 1.5em;
+	}
+
+	@include respond-to(tiny) {
+		padding: .5em 1em;
+	}
+
+	a {
+		text-decoration: none;
+		color: #737580;
+	}
+
+	span {
+		pointer-events: none;
+		opacity: .4;
+	}
+
+	&__prev {
+		float: left;
+	}
+
+	&__next {
+		float: right;
+	}
+}
+
+
+
+//
+// Page: contact
+// ----------------------------------------------------------------------------
+
+.main--contact .sidebar {
+	margin-top: 4em;
+	color: #5f7993;
+	background: #9eded3;
+}
+
+
+// Contact form
+// ----------------------------------------------
+
+.contact-form {
+
+	input,
+	textarea {
+		width: 100%;
+		padding: .8em 1.2em;
+		margin: 2% 0;
+		background: transparent;
+		background: #fff7cc;
+		border: 1px solid #e6d273;
+		border: none;
+		box-shadow: inset 0 1px 2px #dcb55f;
+		transition: border .25s;
+	}
+
+	textarea {
+		height: 200px;
+		resize: none;
+	}
+
+	input:focus,
+	textarea:focus {
+		border-color: #cb6;
+		outline: none;
+	}
+
+	// Submit
+
+	.submit {
+		position: relative;
+		width: auto;
+		margin: 0;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #deb754;
+		background: #fffb89;
+		border: none;
+		box-shadow: 0 1px 2px #dcc45f;
+		transition: color .25s, background .25s;
+
+		&:hover,
+		&:focus {
+			color: #d9ab38;
+			background: #fff671;
+		}
+
+		&:active {
+			top: 1px;
+			box-shadow: 0 0 1px #dcc45f;
+		}
+	}
+
+	// Placeholder
+
+	::placeholder {
+		color: #ccbb66;
+	}
+}
+
+
+// Alert / response
+// ----------------------------------------------
+
+.alert {
+	float: right;
+
+	@include respond-to(medium) {
+		float: none;
+		margin-top: 1em;
+	}
+}

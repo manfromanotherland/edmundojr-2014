@@ -1,9 +1,10 @@
 ---
 layout:     post
-title:      The Scariest Moment
-categories: blog
-tags:       [quotes]
 type:       quote
+title:      The Scariest Moment
+titleHide:  true
+categories: [blog]
+tags:       [quotes]
 ---
 
 > “The scariest moment is always just before you start. After that, things can only get better.”
