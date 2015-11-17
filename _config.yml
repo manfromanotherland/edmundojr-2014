@@ -28,5 +28,5 @@ disqus:           edmundojr
 
 markdown:         redcarpet
 
-exclude:          ['Gruntfile.js', 'package.json', 'node_modules', 'assets/scss']
+exclude:          ['gulpfile.js', 'package.json', 'node_modules', 'assets/scss']
 keep_files:       ['_site/assets/css']
