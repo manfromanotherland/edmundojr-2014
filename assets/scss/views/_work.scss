@@ -1,0 +1,149 @@
+//
+// Views: Work
+// ----------------------------------------------------------------------------
+
+.main--work {
+	padding: 0;
+}
+
+.jobs {
+	width: 100%;
+	padding: .390625%;
+	margin-top: -.781250%;
+	text-align: center;
+
+	@include breakpoint(800) {
+		width: 90%;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	// Row
+
+	&__row {
+		clear: both;
+	}
+
+	// Links
+
+	&__item {
+		float: left;
+		position: relative;
+		overflow: hidden;
+		width: 50%;
+		padding: .390625%;
+		text-decoration: none;
+		border-radius: 2px;
+
+		@include breakpoint(800) {
+			width: 100%;
+			padding: 0 0 6.4%;
+		}
+
+		figure {
+			overflow: hidden;
+			border-radius: 2px;
+		}
+
+		figcaption {
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			transform: translate3d(0,-50%,0);
+		}
+
+		// Title
+
+		h1 {
+			margin: 0;
+			transition: all .4s;
+		}
+
+		// Role
+
+		h4 {
+			margin: 0;
+			font-size: .875em;
+			text-transform: uppercase;
+			opacity: .5;
+			transition: all .4s;
+		}
+
+		// Description
+
+		p {
+			position: absolute;
+			top: 50%;
+			width: 80%;
+			margin: 0 10%;
+			opacity: 0;
+			transform: translate3d(0,-50%,0) scale(.9);
+			transition: all .4s;
+
+			@include breakpoint(800) {
+				font-size: .8em;
+			}
+		}
+
+		// Image
+
+		img {
+			display: block;
+			width: 100%;
+			border-radius: 2px;
+			transition: all .6s;
+		}
+
+		// Super cool hover effect
+
+		&:hover,
+		&:focus {
+
+			h1 {
+				opacity: 0;
+				transform: translate3d(0,-25%,0) scale(1.1);
+			}
+
+			h4 {
+				opacity: 0;
+				transform: translate3d(0,50%,0) scale(1.1);
+			}
+
+			p {
+				opacity: 1;
+				transform: translate3d(0,-50%,0) scale(1);
+			}
+
+			img {
+				transform: scale(1.1);
+			}
+		}
+
+		// Job individual colours
+
+		&--wildside figure {
+			color: #734020;
+			background: #fcc04d;
+		}
+
+		&--mexx figure {
+			color: #f9e9bf;
+			background: #d4501d;
+		}
+
+		&--g3fantoni figure {
+			color: #346ae0;
+			background: #02153e;
+		}
+
+		&--davila figure {
+			color: #4f5960;
+			background: #5cc7d1;
+		}
+
+		&--localhost figure {
+			color: #737580;
+			background: #fff;
+		}
+	}
+}

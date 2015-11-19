@@ -55,15 +55,15 @@
 	margin: 0 auto;
 	border: 2px solid #ebcb63;
 	border-radius: 6px;
-	box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
+	box-shadow: 10px 10px 0 -2px $shark, 10px 10px 0 $outline;
 	backface-visibility: hidden;
 	animation: morphDevice 10s infinite $easing forwards;
 
-	@include respond-to(large) {
+	@include breakpoint(1000) {
 		margin-top: 40%;
 	}
 
-	@include respond-to(medium) {
+	@include breakpoint(800) {
 		display: none;
 	}
 
@@ -88,7 +88,7 @@
 		padding-top: 70%;
 		margin-top: 0;
 		border-color: #ebcb63;
-		box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
+		box-shadow: 10px 10px 0 -2px $shark, 10px 10px 0 $outline;
 		transform: rotate(0);
 	}
 	25%, 40% {
@@ -96,7 +96,7 @@
 		padding-top: 55%;
 		margin-top: 7.5%;
 		border-color: #4b8ac4;
-		box-shadow: 9px -9px 0 -2px $bg-color, 9px -9px 0 $outline;
+		box-shadow: 9px -9px 0 -2px $shark, 9px -9px 0 $outline;
 		transform: rotate(90deg);
 	}
 	50%, 65% {
@@ -104,7 +104,7 @@
 		padding-top: 42%;
 		margin-top: 15%;
 		border-color: #ece9f2;
-		box-shadow: -8px -8px 0 -2px $bg-color, -8px -8px 0 $outline;
+		box-shadow: -8px -8px 0 -2px $shark, -8px -8px 0 $outline;
 		transform: rotate(180deg);
 	}
 	75%, 90% {
@@ -112,7 +112,7 @@
 		padding-top: 70%;
 		margin-top: 0;
 		border-color: #57c39f;
-		box-shadow: -9px 9px 0 -2px $bg-color, -9px 9px 0 $outline;
+		box-shadow: -9px 9px 0 -2px $shark, -9px 9px 0 $outline;
 		transform: rotate(270deg);
 	}
 	100% {
@@ -120,7 +120,7 @@
 		padding-top: 70%;
 		margin-top: 0;
 		border-color: #ebcb63;
-		box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
+		box-shadow: 10px 10px 0 -2px $shark, 10px 10px 0 $outline;
 		transform: rotate(360deg);
 	}
 }

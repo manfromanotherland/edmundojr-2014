@@ -1,5 +1,5 @@
 //
-// Footer
+// Module: Footer
 // ----------------------------------------------------------------------------
 
 .footer {
@@ -7,11 +7,11 @@
 	padding: 2.5em 0;
 	line-height: 1.2em;
 
-	@include respond-to(small) {
+	@include breakpoint(600) {
 		padding: 1.5em 0;
 	}
 
-	@include respond-to(tiny) {
+	@include breakpoint(400) {
 		padding: 1em 0;
 	}
 
