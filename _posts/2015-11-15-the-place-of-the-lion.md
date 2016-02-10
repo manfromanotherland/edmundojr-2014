@@ -1,10 +1,9 @@
 ---
 layout: post
-title: The Place of the Lion
+title: Solitude
 categories: [blog]
 tags: [quotes, reading]
 published: True
-titleHide: true
 type: quote
 
 ---
