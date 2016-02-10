@@ -13,13 +13,13 @@ For me that's crazy behavior, but it's quite simple to change it: go to `Prefere
 
 ```
 // Toggle the Sidebar
-{ "keys": ["super+k"], "command": "toggle_side_bar" },
+{ "keys": ["super+\\"], "command": "toggle_side_bar" },
 
 // BONUS: Reveal current file on the sidebar tree
 { "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
 ```
 
-That's it! Now when you press `command+k` it'll show or hide the sidebar. As a bonus, I added the shortcut `command+shift+r` to reveal the current file in the tree.
+That's it! Now when you press `command+\` it'll show or hide the sidebar. As a bonus, I also added the shortcut `command+shift+r` to reveal the current file in the tree.
 
 Note to Windows users: you must change `super` for `ctrl`.
 
