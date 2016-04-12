@@ -121,6 +121,11 @@
 
 		// Job individual colours
 
+		&--darkside figure {
+			color: #fff;
+			background: #6e6f74;
+		}
+
 		&--wildside figure {
 			color: #734020;
 			background: #fcc04d;
@@ -128,17 +133,17 @@
 
 		&--mexx figure {
 			color: #f9e9bf;
-			background: #d4501d;
+			background: #d46033;
 		}
 
 		&--doctools figure {
 			color: #05656e;
-			background: #1bbdbe;
+			background: #48c0c2;
 		}
 
 		&--bf figure {
 			color: #fff;
-			background: #6e6f74;
+			background: #49ab8e;
 		}
 
 		&--localhost figure {
