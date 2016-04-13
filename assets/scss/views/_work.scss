@@ -67,10 +67,6 @@
 			opacity: 0;
 			transform: translate3d(0,-50%,0) scale(.9);
 			transition: all .4s;
-
-			@include breakpoint(800) {
-				font-size: .8em;
-			}
 		}
 
 		// Image

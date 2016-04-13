@@ -144,7 +144,7 @@
 // ----------------------------------------------------------------------------
 
 .intro {
-	padding: 5em 0;
+	padding: 6em 0;
 
 	@include breakpoint(1000) {
 		padding: 4em 0;
@@ -162,7 +162,6 @@
 		position: relative;
 		margin: 0;
 		color: $athens-gray;
-		cursor: help;
 
 		&::before {
 			// display: none;
@@ -188,9 +187,9 @@
 	}
 
 	p {
-		margin: .8em 0 0;
+		margin: 1em 0 0;
 		font-size: 1.555555556em;
-		line-height: 1.266666667em;
+		line-height: 1.266666667;
 
 		@include breakpoint(400) {
 			font-size: 1.428571429em;
