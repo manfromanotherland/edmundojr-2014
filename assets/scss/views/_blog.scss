@@ -19,6 +19,12 @@
 	padding: 2em 2.5em;
 	margin-bottom: 6.4%;
 	border-radius: 2px;
+	color: $storm-gray;
+	background: #e3e4e8;
+
+	& &__header a {
+		color: #66697a;
+	}
 
 	@include breakpoint(1000) {
 		padding: 1.5em 2em;
@@ -44,71 +50,42 @@
 		color: inherit;
 	}
 
-	// Text
-
-	&--text {
-		color: $storm-gray;
-		background: #e3e4e8;
-
-		.post__header a {
-			color: #5b5c65;
-		}
-	}
-
 	// Quote
 
-	&--quote {
-		color: #90693d;
-		background: #e8ce4d;
-		color: #7f6443;
-		background: #ffed75;
+	&--quote blockquote {
+		margin: 0 0 .5em;
+		font: 1.2em/1.4em $font-serif;
 
-		// .post__header {
-		// 	display: none;
-		// }
-
-		blockquote {
+		p {
 			margin: 0 0 .5em;
-			font: 1.2em/1.4em $font-serif;
+		}
 
-			p {
-				margin: 0 0 .5em;
-			}
-
-			footer {
-				font: .8em/1.4em $font-sans;
-			}
+		footer {
+			font: .8em/1.4em $font-sans;
 		}
 	}
 
 	// Photo
 
-	&--photo {
-		color: #ccc;
-		background: #808080;
+	&--photo img {
+		width: 100%;
+		border-radius: 4px 4px 0 0;
+	}
 
-		.photo div {
-			margin: -2em -2.5em 2em;
-		}
-
-		img {
-			width: 100%;
-			border-radius: 4px 4px 0 0;
-		}
+	.photo div {
+		margin: -2em -2.5em 2em;
 	}
 
 	// Link
 
 	&--link {
-		color: #d3cce6;
-		background: #684a9c;
+
 	}
 
 	// Video
 
 	&--video {
-		color: #ffd9de;
-		background: #d8334a;
+
 	}
 
 	// Post Images
@@ -116,6 +93,7 @@
 	.pic {
 		display: block;
 		margin: 2em -2.5em;
+
 		img {
 			width: 100%;
 		}
@@ -161,6 +139,7 @@
 .post__meta {
 	padding-top: 1em;
 	font-size: .888888889em;
+	color: #66697a;
 
 	ul {
 		display: inline;
@@ -173,18 +152,19 @@
 		position: relative;
 		display: inline-block;
 		vertical-align: top;
-		margin-left: .5em;
+		margin-left: .75em;
 	}
 
 	a {
 		display: inline-block;
 		text-decoration: none;
+		color: inherit;
 		transition: color .25s;
 	}
 
 	svg {
-		width: 22px;
-		height: 22px;
+		width: 24px;
+		height: 24px;
 		fill: currentColor;
 	}
 
@@ -294,7 +274,7 @@
 	margin-bottom: 6.4%;
 	font-weight: 600;
 	text-transform: uppercase;
-	background: #fff;
+	background: #e3e4e8;
 	border-radius: 2px;
 
 	@include breakpoint(1000) {
