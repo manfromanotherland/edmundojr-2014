@@ -6,7 +6,6 @@
 
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
-var shell        = require('gulp-shell');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync  = require('browser-sync').create();
 
@@ -48,12 +47,6 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest(options.sass.destination))
 		.pipe(browserSync.stream());
 });
-
-// -------------------------------------
-//  Task: deploy
-// -------------------------------------
-
-gulp.task('deploy', shell.task(['jekyll build && rsync -vrzc --delete --exclude=wildside --exclude=bf --exclude=st _site/ edmundojr:www']));
 
 // -------------------------------------
 //  Task: default

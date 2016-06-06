@@ -27,6 +27,7 @@ disqus:           edmundojr
 # Dependencies
 
 markdown:         redcarpet
+gems:             [jekyll-paginate]
 
 exclude:          ['gulpfile.js', 'package.json', 'node_modules', 'assets/scss']
 keep_files:       ['_site/assets/css']

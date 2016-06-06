@@ -2,7 +2,6 @@
 layout: post
 title: Solitude
 categories: [blog]
-tags: [quotes, reading]
 published: True
 type: quote
 
