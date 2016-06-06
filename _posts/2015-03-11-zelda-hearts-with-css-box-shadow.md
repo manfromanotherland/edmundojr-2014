@@ -3,7 +3,6 @@ layout:     post
 type:       text
 title:      Zelda Hearts with CSS box-shadow
 categories: [blog]
-tags:       [development, experiments]
 ---
 
 I started to play Zelda with the second and most hated game of the series, **The Adventure of Link**. Since then, I've been in love with the series. Enough gibberish: this is my take on the much-loved-much-tattooed-hearts of the game.

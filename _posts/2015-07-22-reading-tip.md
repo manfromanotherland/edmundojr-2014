@@ -3,7 +3,6 @@ layout: post
 type: quote
 title: Reading Tip &#35;01
 categories: [blog]
-tags: [quotes, tips]
 ---
 
 > “It’s tempting to judge what you read:

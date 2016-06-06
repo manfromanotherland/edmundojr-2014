@@ -2,7 +2,6 @@
 layout: post
 type: quote
 categories: [blog]
-tags: [quotes, reading]
 ---
 
 > “We all want what we want and then get what we get.”

@@ -3,7 +3,6 @@ layout:     post
 type:       text
 title:      Hello World!
 categories: [blog]
-tags:       [general, jekyll]
 ---
 
 So, I've decided to create this brand new blog under this brand new website, using a brand new blog system called [Jekyll](http://jekyllrb.com/). Cool uh? Don't know about that, but at least it's brand new!

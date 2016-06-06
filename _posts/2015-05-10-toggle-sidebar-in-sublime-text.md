@@ -3,7 +3,6 @@ layout: post
 type: text
 title: Toggle Sidebar in Sublime Text
 categories: [blog]
-tags: [sublime-text, general, tips]
 published: True
 ---
 

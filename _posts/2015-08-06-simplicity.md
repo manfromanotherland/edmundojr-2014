@@ -2,7 +2,6 @@
 layout: post
 type: quote
 categories: [blog]
-tags: [quotes]
 ---
 
 > “Simplicity, to me, has always been the essence of good taste.”

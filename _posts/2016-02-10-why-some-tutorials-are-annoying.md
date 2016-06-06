@@ -3,7 +3,6 @@ layout:     post
 type:       video
 title:      Why Some Tutorials Are Annoying
 categories: [blog]
-tags:       [videos, humor]
 ---
 
 <div class="video-container">

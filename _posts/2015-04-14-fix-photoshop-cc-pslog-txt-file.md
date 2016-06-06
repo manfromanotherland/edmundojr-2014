@@ -3,7 +3,6 @@ layout: post
 type: text
 title: Remove Photoshop CC pslog.txt file
 categories: [blog]
-tags: [photoshop]
 ---
 
 If you're like me, you like to keep your files organized, but since Photoshop doesn't care about you, it create a `pslog.txt` file in your home directory. And don't try to delete the file, because the next time you open Photoshop, that haunting thing will be there, looking at you with a “Nice try!” look in its eyes.

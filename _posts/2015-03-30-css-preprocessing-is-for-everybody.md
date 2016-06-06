@@ -3,7 +3,6 @@ layout:     post
 type:       video
 title:      Preprocessing is for Everybody
 categories: [blog]
-tags:       [videos, development, sass]
 ---
 
 <div class="video-container">

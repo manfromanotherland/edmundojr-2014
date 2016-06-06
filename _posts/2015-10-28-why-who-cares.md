@@ -2,7 +2,6 @@
 layout: post
 title: Why? Who cares?
 categories: [blog]
-tags: [general, experiments, development]
 published: True
 type: text
 ---
