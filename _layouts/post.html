@@ -27,7 +27,7 @@ class:  blog
 
 	<footer class="post__meta clearfix">
 		<ul class="post__meta--info">
-			<li><a href="{{ site.url }}{{ page.url }}"><time datetime="{{page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_long_string }}</time></a></li>
+			<li><a href="{{ page.url }}"><time datetime="{{page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_long_string }}</time></a></li>
 		</ul>
 		<ul class="post__meta--actions">
 			<li class="share">

@@ -28,7 +28,7 @@ class:  blog
 
 	<footer class="post__meta clearfix">
 		<ul class="post__meta--info">
-			<li><a href="{{ site.url }}{{ post.url }}"><time datetime="{{post.date | date: '%Y-%m-%d' }}">{{ post.date | date_to_long_string }}</time></a></li>
+			<li><a href="{{ post.url }}"><time datetime="{{post.date | date: '%Y-%m-%d' }}">{{ post.date | date_to_long_string }}</time></a></li>
 			{% for tag in post.tags %}
 			<li><a href="{{ tag_dir }}tag/{{ tag }}">#{{ tag }}</a></li>
 			{% endfor %}
