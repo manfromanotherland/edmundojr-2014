@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+
+	<title>Edmundo Santos, Web Designer & Front-end Developer based in Dublin, Ireland</title>
+
+	<meta name="description" content="I design performance driven, responsive websites that work seamless across devices. For me, common sense wins against intricate ideas, and I love to take the latter and turn into clean and simple interfaces.">
+	<meta property="og:description" content="I design performance driven, responsive websites that work seamless across devices. For me, common sense wins against intricate ideas, and I love to take the latter and turn into clean and simple interfaces.">
+
+	
+
+	<meta name="author" content="Edmundo Santos">
+
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<link rel="canonical" href="http://edmundojr.com/blog/page3/">
+	<link rel="alternate" type="application/rss+xml" title="Edmundo Santos, Web Designer & Front-end Developer based in Dublin, Ireland" href="/feed.xml">
+
+</head>
+<body class="is-blog">
+
+	<header class="header container" role="banner">
+
+		<h1 class="logo ir">
+			<a href="/">
+				<img src="/assets/img/logo.svg" alt="Edmundo Santos, Web Designer & Front-end Developer based in Dublin, Ireland" width="70" height="79">
+				Edmundo Santos, Web Designer & Front-end Developer based in Dublin, Ireland
+			</a>
+		</h1>
+
+		<nav class="nav" role="navigation">
+			<a  href="/">
+				<span data-hover="Portfolio">Portfolio</span>
+			</a>
+			<a  href="/about">
+				<span data-hover="About">About</span>
+			</a>
+			<a class="is-active" href="/blog">
+				<span data-hover="Blog">Blog</span>
+			</a>
+			<a  href="/contact">
+				<span data-hover="Contact">Contact</span>
+			</a>
+		</nav>
+
+	</header>
+
+	<div class="intro container clearfix">
+		<div class="row">
+			<div class="col col-2-3">
+				<h1 data-hover="— Heartbreaker by Led Zeppelin">Hey, fellas, have ya heard the news?</h1>
+				<p>Musings about web development and design. I may also ramble on about all sort of things.</p>
+			</div>
+		</div>
+	</div>
+
+	<main class="main main--blog">
+		<div class="container container--wide clearfix">
+			<div class="row">
+				<div class="col col-2-3">
+					
+<article class="post post--text">
+
+	
+	<header class="post__header">
+		<h1>
+			<a href="/blog/toggle-sidebar-in-sublime-text/">
+				Toggle Sidebar in Sublime Text
+			</a>
+		</h1>
+	</header>
+	
+
+	<p>The shortcut for toggle sidebar in Sublime Text wasn&#39;t working for me. Searching about it in the internets, I discovered that you&#39;ve to press <code>command+k</code> and then <code>command+b</code>, they call it a <em>sequential shortcut</em>.</p>
+
+<p>For me that&#39;s crazy behavior, but it&#39;s quite simple to change it: go to <code>Preferences » Key Bindings - User</code> and paste the following in your file:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">// Toggle the Sidebar
+{ "keys": ["super+\\"], "command": "toggle_side_bar" },
+
+// BONUS: Reveal current file on the sidebar tree
+{ "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
+</code></pre></div>
+<p>That&#39;s it! Now when you press <code>command+\</code> it&#39;ll show or hide the sidebar. As a bonus, I also added the shortcut <code>command+shift+r</code> to reveal the current file in the tree.</p>
+
+<p>Note to Windows users: you must change <code>super</code> for <code>ctrl</code>.</p>
+
+<p>Hope that helps. Happy coding!</p>
+
+
+	<footer class="post__meta clearfix">
+		<ul class="post__meta--info">
+			<li><a href="/blog/toggle-sidebar-in-sublime-text/"><time datetime="2015-05-10">10 May 2015</time></a></li>
+			
+		</ul>
+		<ul class="post__meta--actions">
+			<li class="share">
+				<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M20 10l-7-7v4c-7 1-10 6-11 11 2.5-3.5 6-5.1 11-5.1v4.1l7-7z"/></svg>
+				<div>
+					<a class="share--twitter" href="https://twitter.com/intent/tweet?text=Toggle Sidebar in Sublime Text&amp;url=http://edmundojr.com/blog/toggle-sidebar-in-sublime-text/&amp;via=edmundojr_" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+					<a class="share--facebook" href="https://facebook.com/sharer.php?u=http://edmundojr.com/blog/toggle-sidebar-in-sublime-text/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+					<a class="share--google-plus" href="https://plus.google.com/share?url=http://edmundojr.com/blog/toggle-sidebar-in-sublime-text/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+				</div>
+			</li>
+			<li>
+				<a href="/blog/toggle-sidebar-in-sublime-text/#comments" title="Leave your comment">
+					<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 2c-5.247 0-9.5 3.533-9.5 7.892 0 1.847.738 3.547 1.922 4.763l-1.337 4.345 5.403-1.746c7.517 2.008 13.012-2.512 13.012-7.361 0-4.358-4.253-7.892-9.5-7.892v-.001z"/></svg>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+</article>
+
+<article class="post post--text">
+
+	
+	<header class="post__header">
+		<h1>
+			<a href="/blog/fix-photoshop-cc-pslog-txt-file/">
+				Remove Photoshop CC pslog.txt file
+			</a>
+		</h1>
+	</header>
+	
+
+	<p>If you&#39;re like me, you like to keep your files organized, but since Photoshop doesn&#39;t care about you, it create a <code>pslog.txt</code> file in your home directory. And don&#39;t try to delete the file, because the next time you open Photoshop, that haunting thing will be there, looking at you with a “Nice try!” look in its eyes.</p>
+
+<p>Luckily, with just two easy steps you can end this abomination:</p>
+
+<ol>
+<li>Open <strong>Terminal</strong> located on <code>Applications/Utilities</code> folder;</li>
+<li>Type the following: <code>chflags hidden ~/pslog.txt</code></li>
+</ol>
+
+<p><em lang="fr">Voilà!</em>, that damn file disappears! If you&#39;re feeling kind of sado, you can bring it back by typing <code>chflags nohidden ~/pslog.txt</code> on <strong>Terminal</strong>.</p>
+
+
+	<footer class="post__meta clearfix">
+		<ul class="post__meta--info">
+			<li><a href="/blog/fix-photoshop-cc-pslog-txt-file/"><time datetime="2015-04-14">14 April 2015</time></a></li>
+			
+		</ul>
+		<ul class="post__meta--actions">
+			<li class="share">
+				<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M20 10l-7-7v4c-7 1-10 6-11 11 2.5-3.5 6-5.1 11-5.1v4.1l7-7z"/></svg>
+				<div>
+					<a class="share--twitter" href="https://twitter.com/intent/tweet?text=Remove Photoshop CC pslog.txt file&amp;url=http://edmundojr.com/blog/fix-photoshop-cc-pslog-txt-file/&amp;via=edmundojr_" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+					<a class="share--facebook" href="https://facebook.com/sharer.php?u=http://edmundojr.com/blog/fix-photoshop-cc-pslog-txt-file/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+					<a class="share--google-plus" href="https://plus.google.com/share?url=http://edmundojr.com/blog/fix-photoshop-cc-pslog-txt-file/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+				</div>
+			</li>
+			<li>
+				<a href="/blog/fix-photoshop-cc-pslog-txt-file/#comments" title="Leave your comment">
+					<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 2c-5.247 0-9.5 3.533-9.5 7.892 0 1.847.738 3.547 1.922 4.763l-1.337 4.345 5.403-1.746c7.517 2.008 13.012-2.512 13.012-7.361 0-4.358-4.253-7.892-9.5-7.892v-.001z"/></svg>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+</article>
+
+<article class="post post--link">
+
+	
+	<header class="post__header">
+		<h1>
+			<a href="http://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/" target="_blank">
+				SASS: @extend or @mixin?
+			</a>
+		</h1>
+	</header>
+	
+
+	<p>After much delay, I gave up my preconceptions against preprocessors (I&#39;m like a rapper) and started to use SASS. It&#39;s worth alone just for the nesting and compressed output features, but if you want to really squeeze the juice out of it, you&#39;ll use the <code>@extend</code> and <code>@mixin</code> features too.</p>
+
+<p>I was a bit confused at the beginning – when should I use each? – and after <a href="https://duckduckgo.com">ducking</a> around I stumbled across this article on the <a href="http://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/">differences and use cases between @extend and @mixin</a>.</p>
+
+
+	<footer class="post__meta clearfix">
+		<ul class="post__meta--info">
+			<li><a href="/blog/sass-extend-or-mixin/"><time datetime="2015-04-01">01 April 2015</time></a></li>
+			
+		</ul>
+		<ul class="post__meta--actions">
+			<li class="share">
+				<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M20 10l-7-7v4c-7 1-10 6-11 11 2.5-3.5 6-5.1 11-5.1v4.1l7-7z"/></svg>
+				<div>
+					<a class="share--twitter" href="https://twitter.com/intent/tweet?text=SASS: @extend or @mixin?&amp;url=http://edmundojr.com/blog/sass-extend-or-mixin/&amp;via=edmundojr_" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+					<a class="share--facebook" href="https://facebook.com/sharer.php?u=http://edmundojr.com/blog/sass-extend-or-mixin/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+					<a class="share--google-plus" href="https://plus.google.com/share?url=http://edmundojr.com/blog/sass-extend-or-mixin/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+				</div>
+			</li>
+			<li>
+				<a href="/blog/sass-extend-or-mixin/#comments" title="Leave your comment">
+					<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 2c-5.247 0-9.5 3.533-9.5 7.892 0 1.847.738 3.547 1.922 4.763l-1.337 4.345 5.403-1.746c7.517 2.008 13.012-2.512 13.012-7.361 0-4.358-4.253-7.892-9.5-7.892v-.001z"/></svg>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+</article>
+
+<article class="post post--video">
+
+	
+	<header class="post__header">
+		<h1>
+			<a href="/blog/css-preprocessing-is-for-everybody/">
+				Preprocessing is for Everybody
+			</a>
+		</h1>
+	</header>
+	
+
+	<div class="video-container">
+    <iframe src="https://player.vimeo.com/video/99359664?color=d8334a&title=0&byline=0&portrait=0" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<p>Chris Coyer, the mind behind <a href="http://css-tricks.com/">CSS-Tricks</a> (<em>the</em> most useful blog about CSS) and the man behind that awesome mexican-skull shirt, explains why CSS preprocessors are for everybody – even Greg likes it!</p>
+
+<p>I don&#39;t know about you, but I&#39;m sold.</p>
+
+
+	<footer class="post__meta clearfix">
+		<ul class="post__meta--info">
+			<li><a href="/blog/css-preprocessing-is-for-everybody/"><time datetime="2015-03-30">30 March 2015</time></a></li>
+			
+		</ul>
+		<ul class="post__meta--actions">
+			<li class="share">
+				<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M20 10l-7-7v4c-7 1-10 6-11 11 2.5-3.5 6-5.1 11-5.1v4.1l7-7z"/></svg>
+				<div>
+					<a class="share--twitter" href="https://twitter.com/intent/tweet?text=Preprocessing is for Everybody&amp;url=http://edmundojr.com/blog/css-preprocessing-is-for-everybody/&amp;via=edmundojr_" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+					<a class="share--facebook" href="https://facebook.com/sharer.php?u=http://edmundojr.com/blog/css-preprocessing-is-for-everybody/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+					<a class="share--google-plus" href="https://plus.google.com/share?url=http://edmundojr.com/blog/css-preprocessing-is-for-everybody/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+				</div>
+			</li>
+			<li>
+				<a href="/blog/css-preprocessing-is-for-everybody/#comments" title="Leave your comment">
+					<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 2c-5.247 0-9.5 3.533-9.5 7.892 0 1.847.738 3.547 1.922 4.763l-1.337 4.345 5.403-1.746c7.517 2.008 13.012-2.512 13.012-7.361 0-4.358-4.253-7.892-9.5-7.892v-.001z"/></svg>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+</article>
+
+<article class="post post--text">
+
+	
+	<header class="post__header">
+		<h1>
+			<a href="/blog/zelda-hearts-with-css-box-shadow/">
+				Zelda Hearts with CSS box-shadow
+			</a>
+		</h1>
+	</header>
+	
+
+	<p>I started to play Zelda with the second and most hated game of the series, <strong>The Adventure of Link</strong>. Since then, I&#39;ve been in love with the series. Enough gibberish: this is my take on the much-loved-much-tattooed-hearts of the game.</p>
+
+<p data-height="312" data-theme-id="13050" data-slug-hash="raZgdw" data-default-tab="result" data-user="edmundojr" class='codepen'>See the Pen <a href='http://codepen.io/edmundojr/pen/raZgdw/'>CSS Zelda Hearts</a> by Edmundo Junior (<a href='http://codepen.io/edmundojr'>@edmundojr</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+<p><script async src="//assets.codepen.io/assets/embed/ei.js"></script></p>
+
+<p>It&#39;s amazing what can you do using just <code>box-shadow</code>. I used <code>em</code> for measuring, so you can change the size of the heart by just modifing the <code>font-size</code> of the parent element. Go ahead, try it!</p>
+
+
+	<footer class="post__meta clearfix">
+		<ul class="post__meta--info">
+			<li><a href="/blog/zelda-hearts-with-css-box-shadow/"><time datetime="2015-03-11">11 March 2015</time></a></li>
+			
+		</ul>
+		<ul class="post__meta--actions">
+			<li class="share">
+				<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M20 10l-7-7v4c-7 1-10 6-11 11 2.5-3.5 6-5.1 11-5.1v4.1l7-7z"/></svg>
+				<div>
+					<a class="share--twitter" href="https://twitter.com/intent/tweet?text=Zelda Hearts with CSS box-shadow&amp;url=http://edmundojr.com/blog/zelda-hearts-with-css-box-shadow/&amp;via=edmundojr_" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+					<a class="share--facebook" href="https://facebook.com/sharer.php?u=http://edmundojr.com/blog/zelda-hearts-with-css-box-shadow/" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+					<a class="share--google-plus" href="https://plus.google.com/share?url=http://edmundojr.com/blog/zelda-hearts-with-css-box-shadow/" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+				</div>
+			</li>
+			<li>
+				<a href="/blog/zelda-hearts-with-css-box-shadow/#comments" title="Leave your comment">
+					<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 2c-5.247 0-9.5 3.533-9.5 7.892 0 1.847.738 3.547 1.922 4.763l-1.337 4.345 5.403-1.746c7.517 2.008 13.012-2.512 13.012-7.361 0-4.358-4.253-7.892-9.5-7.892v-.001z"/></svg>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+</article>
+
+
+<footer class="pagination">
+	
+	<a class="pagination__prev" href="/blog/page2/">‹ Previous</a>
+	
+	<!-- <span class="page_number ">3 of 4</span> -->
+	
+	<a href="/blog/page4/" class="pagination__next">Next ›</a>
+	
+</footer>
+				</div>
+				<aside class="sidebar col col-1-3" role="complementary">
+
+</aside>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer container" role="contentinfo">
+		<small>Handmade in Dublin's fair city. You can also find me on <a href="https://github.com/edmundojr">GitHub</a>, <a href="https://ie.linkedin.com/in/edmundojr">Linkedin</a>, <a href="https://instagram.com/edmundojr_">Instagram</a> and <a href="https://twitter.com/edmundojr_">Twitter</a>.</small>
+	</footer>
+
+	<script src="https://use.typekit.net/nkh6zwu.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/assets/js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="/assets/js/main.min.js"></script>
+
+	
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-1068613-7', 'auto');
+		ga('send', 'pageview', {
+			'page': '/blog/page3/'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Edmundo Santos, Web Designer & Front-end Developer based in Dublin, Ireland</title>
+	<link href="http://edmundojr.com/atom.xml" rel="self"/>
+	<link href="http://edmundojr.com/"/>
+	<updated>2016-06-06T12:34:30+01:00</updated>
+	<id>http://edmundojr.com</id>
+	<author>
+		<name>Edmundo Santos</name>
+		<email>hello@edmundojr.com</email>
+	</author>
+
+	
+	<entry>
+		<title>Simplicity</title>
+		<link href="http://edmundojr.com/blog/simplicity/"/>
+		<updated>2016-02-26T01:49:47+00:00</updated>
+		<id>http://edmundojr.com/blog/simplicity</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;“Simplicity is the final achievement. After one has played a vast quantity of notes and more notes, it is simplicity that emerges as the crowning reward of art.”
+&lt;footer&gt;— Frédéric Chopin&lt;/footer&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Facing Reality</title>
+		<link href="http://edmundojr.com/blog/facing-reality/"/>
+		<updated>2016-02-15T00:00:00+00:00</updated>
+		<id>http://edmundojr.com/blog/facing-reality</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;“We all want what we want and then get what we get.”
+&lt;footer&gt;— Abby Covert on &lt;a rel=&quot;nofollow&quot; href=&quot;http://www.amazon.co.uk/gp/product/1500615994/ref=as_li_tl?ie=UTF8&amp;camp=1634&amp;creative=6738&amp;creativeASIN=1500615994&amp;linkCode=as2&amp;tag=edmundojr-21&quot;&gt;How to Make Sense of Any Mess&lt;/a&gt;&lt;img src=&quot;http://ir-uk.amazon-adsystem.com/e/ir?t=edmundojr-21&amp;l=as2&amp;o=2&amp;a=1500615994&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;&lt;/footer&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Why Some Tutorials Are Annoying</title>
+		<link href="http://edmundojr.com/blog/why-some-tutorials-are-annoying/"/>
+		<updated>2016-02-10T00:00:00+00:00</updated>
+		<id>http://edmundojr.com/blog/why-some-tutorials-are-annoying</id>
+		<content type="html">&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe width=&quot;853&quot; height=&quot;480&quot; src=&quot;https://www.youtube-nocookie.com/embed/9bUtZzi6hag?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This guy nailed it! Some YouTube tutorials are just unbearable to watch, that&amp;#39;s why I tend to learn new things by reading rather than watching tutorials. If only they could go straight to the point.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Solitude</title>
+		<link href="http://edmundojr.com/blog/the-place-of-the-lion/"/>
+		<updated>2015-11-15T00:00:00+00:00</updated>
+		<id>http://edmundojr.com/blog/the-place-of-the-lion</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;“Much was possible to a man in solitude, but some things were possible only to a man in companionship, and of these the most important was balance. No mind was so good that it did not need another mind to counter and equal it, and to save it from conceit and bigotry and folly.”
+&lt;footer&gt;— Charles Williams, The Place of the Lion&lt;/footer&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;I was reading a book titled “The Inklings” and I came upon this quote that got me thinking about solitude and companionship. I&amp;#39;d always value solitude; I think it gives birth to the original in us and bring us closer to our true selves. However, Williams makes an excellent point in his quote: good companionship is good for your mind.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Why? Who cares?</title>
+		<link href="http://edmundojr.com/blog/why-who-cares/"/>
+		<updated>2015-10-28T00:00:00+00:00</updated>
+		<id>http://edmundojr.com/blog/why-who-cares</id>
+		<content type="html">&lt;p data-height=&quot;250&quot; data-theme-id=&quot;13050&quot; data-slug-hash=&quot;eNPJVW&quot; data-default-tab=&quot;result&quot; data-user=&quot;edmundojr&quot; class=&#39;codepen&#39;&gt;See the Pen &lt;a href=&#39;http://codepen.io/edmundojr/pen/eNPJVW/&#39;&gt;CSS Animated Cards Carousel&lt;/a&gt; by Edmundo Santos (&lt;a href=&#39;http://codepen.io/edmundojr&#39;&gt;@edmundojr&lt;/a&gt;) on &lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;In a world with more than 7 billion people, I think it&amp;#39;s safe to say that we are enormously insignificant, and much of what we do doesn&amp;#39;t matter at all in the grand scheme of things. That&amp;#39;s rather new information, but still people don&amp;#39;t generally lose any sleep over it.&lt;/p&gt;
+
+&lt;p&gt;In fact, they&amp;#39;re quite right. In the book &lt;em&gt;The Restaurant at the End of the Universe&lt;/em&gt;, Douglas Adams nicely put that, “If life is going to exist in a Universe of this size, then the one thing it cannot afford to have is a sense of proportion.”.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;#39;s where the internet is different: folks tend to compare themselves and their work with virtually everyone in this cat-infested place. And let me tell you, there&amp;#39;s some badass folks here, we&amp;#39;re no match. Mostly everything that we do can be made better, and probably some guy already has done it somewhere.&lt;/p&gt;
+
+&lt;p&gt;But that doesn&amp;#39;t mean that you&amp;#39;re bad at what you do, and if you really think about it, it&amp;#39;s not a fair competition to begin with: you&amp;#39;re comparing yourself with folks from all over the world. Folks that work at Apple, for Christ&amp;#39;s sake! Imagine how shitty would be the guy making coffee in your local coffeeshop if he had to compare his coffee against all best coffees in the world. Pretty shitty, huh? Truth be told, almost everyone had – at some point – felt the same way in the internet.&lt;/p&gt;
+
+&lt;p&gt;You don&amp;#39;t need to do something because is cool or because people will like it. Don&amp;#39;t unfairly compare yourself to others, instead, be a sponge and try to learn what you can with them. Don&amp;#39;t ask “why?”, &lt;a href=&quot;https://www.youtube.com/watch?v=ZXsQAXx_ao0&quot;&gt;just do it&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You have to do what you love, and if you&amp;#39;re not enjoying it, well, you shouldn&amp;#39;t be doing it in the first place. Be happy, fellow nerd, that&amp;#39;s what matter the most in the end.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Ramble on</title>
+		<link href="http://edmundojr.com/blog/ramble-on/"/>
+		<updated>2015-10-08T00:00:00+01:00</updated>
+		<id>http://edmundojr.com/blog/ramble-on</id>
+		<content type="html">&lt;p&gt;Hey folks, long time no see! It&amp;#39;s been a while since I last posted something, and I know that I already had said this, but from now on this blog will be frequently updated, &lt;a href=&quot;http://cl.ly/image/2t110L1k0R1e&quot; target=&quot;_blank&quot;&gt;glob&lt;/a&gt; dammit!&lt;/p&gt;
+
+&lt;p&gt;I used to think of blogging as a way to share “answered questions”, and that&amp;#39;s why I rarely write something here, because – naturally – I have more questions than answers. From this point forward, I&amp;#39;ll start treating this blog as a place to &lt;em&gt;ramble on&lt;/em&gt; (you see what I did here?), no more drafts folder with unfinished posts.&lt;/p&gt;
+
+&lt;p&gt;For the few of you that still follow me here, please hold tight, a lot of crazy stuff coming on next. Signing off, Edmundo.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Simplicity</title>
+		<link href="http://edmundojr.com/blog/simplicity/"/>
+		<updated>2015-08-06T00:00:00+01:00</updated>
+		<id>http://edmundojr.com/blog/simplicity</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;“Simplicity, to me, has always been the essence of good taste.”
+&lt;footer&gt;— &lt;a href=&quot;http://www.gq.com/story/cary-grant-on-style&quot;&gt;Cary Grant on style&lt;/a&gt;&lt;/footer&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Better Commit Messages</title>
+		<link href="http://edmundojr.com/blog/better-commit-messages-with-a-gitmessage-template/"/>
+		<updated>2015-08-06T00:00:00+01:00</updated>
+		<id>http://edmundojr.com/blog/better-commit-messages-with-a-gitmessage-template</id>
+		<content type="html">&lt;p&gt;Nice trick by &lt;a href=&quot;https://twitter.com/MatthewMSumner&quot;&gt;Matt Sumner&lt;/a&gt; for better commit messages using a .gitmessage template. I&amp;#39;ve adopted the technicle, it&amp;#39;s very useful for providing context.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Reading Tip &#35;01</title>
+		<link href="http://edmundojr.com/blog/reading-tip/"/>
+		<updated>2015-07-22T00:00:00+01:00</updated>
+		<id>http://edmundojr.com/blog/reading-tip</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;“It’s tempting to judge what you read:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I agree with these statements, and I disagree with those.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;However, a great thinker who has spent decades on an unusual line of thought cannot induce their context into your head in a few pages. It’s almost certainly the case that you don’t fully understand their statements.&lt;/p&gt;
+
+&lt;p&gt;Instead, you can say:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I have now learned that there exists a worldview in which all of these statements are consistent.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;And if it feels worthwhile, you can make a genuine effort to understand that entire worldview. You don&amp;#39;t have to adopt it. Just make it available to yourself, so you can make connections to it when it&amp;#39;s needed.”&lt;/p&gt;
+
+&lt;footer&gt;— Bret Victor&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;From time to time, I have a look on &lt;a href=&quot;http://worrydream.com/&quot;&gt;Bret Victor&amp;#39;s website&lt;/a&gt; (lad&amp;#39;s a genius), seeking inspiration and new knowledge. This great piece of &lt;a href=&quot;http://worrydream.com/Links2013/&quot;&gt;advice on reading&lt;/a&gt; is from 2013, but I just found it. Worth digging!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>How to make TextEdit open new a document by default</title>
+		<link href="http://edmundojr.com/blog/how-to-make-textedit-open-with-new-document/"/>
+		<updated>2015-05-27T00:00:00+01:00</updated>
+		<id>http://edmundojr.com/blog/how-to-make-textedit-open-with-new-document</id>
+		<content type="html">&lt;p&gt;I found this amazing trick that makes TextEdit show a new blank file by default instead of the file picker. This way you can start to type right away.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Toggle Sidebar in Sublime Text</title>
+		<link href="http://edmundojr.com/blog/toggle-sidebar-in-sublime-text/"/>
+		<updated>2015-05-10T00:00:00+01:00</updated>
+		<id>http://edmundojr.com/blog/toggle-sidebar-in-sublime-text</id>
+		<content type="html">&lt;p&gt;The shortcut for toggle sidebar in Sublime Text wasn&amp;#39;t working for me. Searching about it in the internets, I discovered that you&amp;#39;ve to press &lt;code&gt;command+k&lt;/code&gt; and then &lt;code&gt;command+b&lt;/code&gt;, they call it a &lt;em&gt;sequential shortcut&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;For me that&amp;#39;s crazy behavior, but it&amp;#39;s quite simple to change it: go to &lt;code&gt;Preferences » Key Bindings - User&lt;/code&gt; and paste the following in your file:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;// Toggle the Sidebar
+{ &quot;keys&quot;: [&quot;super+\\&quot;], &quot;command&quot;: &quot;toggle_side_bar&quot; },
+
+// BONUS: Reveal current file on the sidebar tree
+{ &quot;keys&quot;: [&quot;super+shift+r&quot;], &quot;command&quot;: &quot;reveal_in_side_bar&quot; },
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That&amp;#39;s it! Now when you press &lt;code&gt;command+\&lt;/code&gt; it&amp;#39;ll show or hide the sidebar. As a bonus, I also added the shortcut &lt;code&gt;command+shift+r&lt;/code&gt; to reveal the current file in the tree.&lt;/p&gt;
+
+&lt;p&gt;Note to Windows users: you must change &lt;code&gt;super&lt;/code&gt; for &lt;code&gt;ctrl&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hope that helps. Happy coding!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Remove Photoshop CC pslog.txt file</title>
+		<link href="http://edmundojr.com/blog/fix-photoshop-cc-pslog-txt-file/"/>
+		<updated>2015-04-14T00:00:00+01:00</updated>
+		<id>http://edmundojr.com/blog/fix-photoshop-cc-pslog-txt-file</id>
+		<content type="html">&lt;p&gt;If you&amp;#39;re like me, you like to keep your files organized, but since Photoshop doesn&amp;#39;t care about you, it create a &lt;code&gt;pslog.txt&lt;/code&gt; file in your home directory. And don&amp;#39;t try to delete the file, because the next time you open Photoshop, that haunting thing will be there, looking at you with a “Nice try!” look in its eyes.&lt;/p&gt;
+
+&lt;p&gt;Luckily, with just two easy steps you can end this abomination:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Open &lt;strong&gt;Terminal&lt;/strong&gt; located on &lt;code&gt;Applications/Utilities&lt;/code&gt; folder;&lt;/li&gt;
+&lt;li&gt;Type the following: &lt;code&gt;chflags hidden ~/pslog.txt&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em lang=&quot;fr&quot;&gt;Voilà!&lt;/em&gt;, that damn file disappears! If you&amp;#39;re feeling kind of sado, you can bring it back by typing &lt;code&gt;chflags nohidden ~/pslog.txt&lt;/code&gt; on &lt;strong&gt;Terminal&lt;/strong&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>SASS: @extend or @mixin?</title>
+		<link href="http://edmundojr.com/blog/sass-extend-or-mixin/"/>
+		<updated>2015-04-01T00:00:00+01:00</updated>
+		<id>http://edmundojr.com/blog/sass-extend-or-mixin</id>
+		<content type="html">&lt;p&gt;After much delay, I gave up my preconceptions against preprocessors (I&amp;#39;m like a rapper) and started to use SASS. It&amp;#39;s worth alone just for the nesting and compressed output features, but if you want to really squeeze the juice out of it, you&amp;#39;ll use the &lt;code&gt;@extend&lt;/code&gt; and &lt;code&gt;@mixin&lt;/code&gt; features too.&lt;/p&gt;
+
+&lt;p&gt;I was a bit confused at the beginning – when should I use each? – and after &lt;a href=&quot;https://duckduckgo.com&quot;&gt;ducking&lt;/a&gt; around I stumbled across this article on the &lt;a href=&quot;http://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/&quot;&gt;differences and use cases between @extend and @mixin&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Preprocessing is for Everybody</title>
+		<link href="http://edmundojr.com/blog/css-preprocessing-is-for-everybody/"/>
+		<updated>2015-03-30T00:00:00+01:00</updated>
+		<id>http://edmundojr.com/blog/css-preprocessing-is-for-everybody</id>
+		<content type="html">&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/99359664?color=d8334a&amp;title=0&amp;byline=0&amp;portrait=0&quot; width=&quot;700&quot; height=&quot;393&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Chris Coyer, the mind behind &lt;a href=&quot;http://css-tricks.com/&quot;&gt;CSS-Tricks&lt;/a&gt; (&lt;em&gt;the&lt;/em&gt; most useful blog about CSS) and the man behind that awesome mexican-skull shirt, explains why CSS preprocessors are for everybody – even Greg likes it!&lt;/p&gt;
+
+&lt;p&gt;I don&amp;#39;t know about you, but I&amp;#39;m sold.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Zelda Hearts with CSS box-shadow</title>
+		<link href="http://edmundojr.com/blog/zelda-hearts-with-css-box-shadow/"/>
+		<updated>2015-03-11T00:00:00+00:00</updated>
+		<id>http://edmundojr.com/blog/zelda-hearts-with-css-box-shadow</id>
+		<content type="html">&lt;p&gt;I started to play Zelda with the second and most hated game of the series, &lt;strong&gt;The Adventure of Link&lt;/strong&gt;. Since then, I&amp;#39;ve been in love with the series. Enough gibberish: this is my take on the much-loved-much-tattooed-hearts of the game.&lt;/p&gt;
+
+&lt;p data-height=&quot;312&quot; data-theme-id=&quot;13050&quot; data-slug-hash=&quot;raZgdw&quot; data-default-tab=&quot;result&quot; data-user=&quot;edmundojr&quot; class=&#39;codepen&#39;&gt;See the Pen &lt;a href=&#39;http://codepen.io/edmundojr/pen/raZgdw/&#39;&gt;CSS Zelda Hearts&lt;/a&gt; by Edmundo Junior (&lt;a href=&#39;http://codepen.io/edmundojr&#39;&gt;@edmundojr&lt;/a&gt;) on &lt;a href=&#39;http://codepen.io&#39;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s amazing what can you do using just &lt;code&gt;box-shadow&lt;/code&gt;. I used &lt;code&gt;em&lt;/code&gt; for measuring, so you can change the size of the heart by just modifing the &lt;code&gt;font-size&lt;/code&gt; of the parent element. Go ahead, try it!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Rob Pike's 5 Rules of Programming</title>
+		<link href="http://edmundojr.com/blog/five-rules-of-programming/"/>
+		<updated>2015-03-03T00:00:00+00:00</updated>
+		<id>http://edmundojr.com/blog/five-rules-of-programming</id>
+		<content type="html">&lt;p&gt;Someone posted this &lt;a href=&quot;http://users.ece.utexas.edu/%7Eadnan/pike.html&quot;&gt;amazing piece of advice&lt;/a&gt; on Twitter, so I&amp;#39;m linking it here.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Hello World!</title>
+		<link href="http://edmundojr.com/blog/hello-world/"/>
+		<updated>2015-03-02T00:00:00+00:00</updated>
+		<id>http://edmundojr.com/blog/hello-world</id>
+		<content type="html">&lt;p&gt;So, I&amp;#39;ve decided to create this brand new blog under this brand new website, using a brand new blog system called &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Cool uh? Don&amp;#39;t know about that, but at least it&amp;#39;s brand new!&lt;/p&gt;
+
+&lt;p&gt;Jokes aside, in the beginning of the process of rewriting the blog, I thought about import all my previous content from Tumblr, but it was just inspirational quotes and random links, nothing really useful or important.&lt;/p&gt;
+
+&lt;p&gt;As I&amp;#39;m always tinkering with HTML and CSS, this will be the place to share my experiments and ideas.&lt;/p&gt;
+
+&lt;h2&gt;Why Jekyll?&lt;/h2&gt;
+
+&lt;p&gt;First of all, let me say that I really love(d) Tumblr. That said, they service was &lt;del&gt;kind of crappy&lt;/del&gt; unreliable lately. Sometimes my blog would stay down for hours on end. Not cool, Tumblr.&lt;/p&gt;
+
+&lt;p&gt;So I found Jekyll, which is incredible basic: it scans a directory of posts written in MarkDown (or Textile) and translates them into HTML. It&amp;#39;s so easy to implemented that I did in one day for this site.&lt;/p&gt;
+
+&lt;h2&gt;Why in English?&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Aren&amp;#39;t you brazilian?&lt;/strong&gt; I know… I am! But in the last 7 months I&amp;#39;ve been living abroad, far away from that goddamn hot country. This blog will be my English &lt;strong&gt;dojo&lt;/strong&gt; (do you have this world, right?), and here I&amp;#39;ll practice and learn the ways of English writing, like a ninja! Either way, I&amp;#39;m not a writer and I&amp;#39;m not keen to write even in Portuguese, but &lt;em&gt;with struggle comes improvement&lt;/em&gt; (or something like that), so I&amp;#39;d decided that this is the best course of action.&lt;/p&gt;
+
+&lt;p&gt;By the way, if you find something wrong, please &lt;em&gt;do&lt;/em&gt; correct me, I would very much appreciate.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>The Scariest Moment</title>
+		<link href="http://edmundojr.com/blog/scariest-moment/"/>
+		<updated>2015-03-01T00:00:00+00:00</updated>
+		<id>http://edmundojr.com/blog/scariest-moment</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;“The scariest moment is always just before you start. After that, things can only get better.”
+&lt;footer&gt;— Stephen King&lt;/footer&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;On each and every one of the blogs that I&amp;#39;d started in the past, I posted this quote. Why this quote, Galadriel? &lt;q&gt;Perhaps it is because I am afraid, and it &lt;a href=&quot;https://www.youtube.com/watch?v=ZFcYobgbFTM&quot;&gt;gives me courage&lt;/a&gt;.&lt;/q&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+</feed>
